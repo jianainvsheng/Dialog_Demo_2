@@ -10,7 +10,7 @@ import android.view.View;
 
 public abstract class BaseDialogHelper<D> {
 
-    private D mModel;
+    private D mBuilder;
 
     private Dialog mDialog;
 
@@ -30,12 +30,12 @@ public abstract class BaseDialogHelper<D> {
     public abstract View onCreateContextView(Context context);
 
     /**
-     * Binding model
-     * @param modle
+     * Binding builder
+     * @param builder
      */
-    public void setModel(D modle, Dialog dialog){
+    public void setBuilder(D builder, Dialog dialog){
 
-        this.mModel = modle;
+        this.mBuilder = builder;
         this.mDialog = dialog;
     }
 
@@ -43,9 +43,9 @@ public abstract class BaseDialogHelper<D> {
      * return the modle
      * @return
      */
-    public D getModel(){
+    public D getBuilder(){
 
-        return mModel;
+        return mBuilder;
     }
 
     public Dialog getDialog(){

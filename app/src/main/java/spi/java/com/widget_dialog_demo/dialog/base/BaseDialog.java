@@ -15,11 +15,9 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public abstract class BaseDialog <D extends IDialogBuilder,H extends BaseDialogHelper<D>> extends Dialog implements IDialog<D,H>{
+public abstract class BaseDialog <D extends IDialogBuilder<D,H>,H extends BaseDialogHelper<D>> extends Dialog implements IDialog<D,H>{
 
     private H mHelper;
-
-    private BaseDialogHelper<D> mDefaultHelper;
 
     public BaseDialog(@NonNull Context context,D data) {
         super(context);
@@ -35,7 +33,7 @@ public abstract class BaseDialog <D extends IDialogBuilder,H extends BaseDialogH
     public void initDialog(Context context, D data) {
         mHelper = onCreateHelper(context,data);
         if(mHelper == null){
-            mDefaultHelper = onCreateDefaultHelp(context,data);
+            BaseDialogHelper<D> mDefaultHelper = onCreateDefaultHelp(context,data);
             if(mDefaultHelper == null){
                 throw new NullPointerException("onCreateHelper and onCreateDefaultHelp fail by which mHelper is null");
             }else{
@@ -43,7 +41,7 @@ public abstract class BaseDialog <D extends IDialogBuilder,H extends BaseDialogH
                     throw new NullPointerException("mDefaultHelper fail by which view is null in the helper");
                 } else{
                     setContentView(mDefaultHelper.getContextView());
-                    mDefaultHelper.setModel(data,this);
+                    mDefaultHelper.setBuilder(data,this);
                 }
             }
         }else{
@@ -51,7 +49,7 @@ public abstract class BaseDialog <D extends IDialogBuilder,H extends BaseDialogH
                 throw new NullPointerException("ContextView fail by which view is null in the helper");
             }
             setContentView(mHelper.getContextView());
-            mHelper.setModel(data,this);
+            mHelper.setBuilder(data,this);
         }
     }
 
@@ -76,10 +74,21 @@ public abstract class BaseDialog <D extends IDialogBuilder,H extends BaseDialogH
         return null;
     }
 
+    /**
+     * set the default helper
+     * @param context
+     * @param data
+     * @return
+     */
     public abstract BaseDialogHelper<D> onCreateDefaultHelp(Context context, D data);
 
+    /**
+     * return the helper
+     * @return
+     */
     public H getHelper(){
 
         return mHelper;
     }
+
 }

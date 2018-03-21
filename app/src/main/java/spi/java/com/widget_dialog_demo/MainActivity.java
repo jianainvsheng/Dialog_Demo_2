@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
 import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 import spi.java.com.widget_dialog_demo.dialog.helper.usually.UsuallyDialogHelper;
 import spi.java.com.widget_dialog_demo.test.GCommonDialog;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();
         } else if(view.getId() == R.id.GCommonDialog_new_Test){
 
-            GNormalDialog dialog = new GNormalDialog.Builder(this)
+            GNormalDialog dialog = GNormalDialog.onCreateBuiler(this)
                     .setContent("你好我是新版本GCommonDialog")
                     .setThemeStyleResId(R.style.dialog_style)
                     .setNegativeName("cancle")
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();
         }else if(view.getId() == R.id.OrderfillDeclareDialog_new_Test){
 
-            GNormalDialog dialog = new GNormalDialog.Builder<OrderfillDeclareHelper>(this)
+            GNormalDialog dialog = GNormalDialog.onCreateBuiler(this)
                     .setContent("大家好我是新版本OrderfillDeclareDialog")
                     .setPositiveName("ok")
                     .setThemeStyleResId(R.style.dialog_style)

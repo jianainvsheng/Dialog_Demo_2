@@ -11,6 +11,7 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import spi.java.com.widget_dialog_demo.R;
+import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
 import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 import spi.java.com.widget_dialog_demo.test.ScreenUtils;
@@ -18,7 +19,7 @@ import spi.java.com.widget_dialog_demo.test.ScreenUtils;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public class UsuallyDialogHelper extends BaseDialogHelper<GNormalDialog.Builder> implements View.OnClickListener{
+public class UsuallyDialogHelper<H extends UsuallyDialogHelper<H>> extends BaseDialogHelper<NormalBuilder<H>> implements View.OnClickListener{
 
     private LinearLayout mContainerLayout;
     private TextView mTitleTv;
@@ -46,8 +47,8 @@ public class UsuallyDialogHelper extends BaseDialogHelper<GNormalDialog.Builder>
     }
 
     @Override
-    public void setModel(GNormalDialog.Builder builder, Dialog dialog) {
-        super.setModel(builder,dialog);
+    public void setBuilder(NormalBuilder builder, Dialog dialog) {
+        super.setBuilder(builder, dialog);
         // 普通视图，有标题栏或内容
         if (TextUtils.isEmpty(builder.getTitle())) {
             mTitleTv.setVisibility(View.GONE);
