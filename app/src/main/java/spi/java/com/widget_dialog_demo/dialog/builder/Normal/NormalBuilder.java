@@ -12,7 +12,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian on 2018/3/21.
  */
 
-public class NormalBuilder<H extends BaseDialogHelper<NormalBuilder<H>>> implements IDialogBuilder<NormalBuilder<H>, H> {
+public class NormalBuilder implements IDialogBuilder<NormalBuilder> {
 
     private Context context;
     private String title;            // 标题文字
@@ -31,9 +31,9 @@ public class NormalBuilder<H extends BaseDialogHelper<NormalBuilder<H>>> impleme
     private @StyleRes
     int mThemeStyleId;
 
-    private Class<H> mHelperClass;
+    private Class<? extends BaseDialogHelper<NormalBuilder>> mHelperClass;
 
-    private GNormalDialog<H> mDialog;
+    private GNormalDialog mDialog;
 
     private GNormalDialog.PositiveCallBack positiveCallBack;
     private GNormalDialog.NegativeCallBack negativeCallBack;
@@ -193,25 +193,24 @@ public class NormalBuilder<H extends BaseDialogHelper<NormalBuilder<H>>> impleme
     }
 
     @Override
-    public NormalBuilder setThemeStyleResId(@StyleRes int themeStyleResId) {
-
+    public NormalBuilder setThemeStyleResId(int themeStyleResId) {
         this.mThemeStyleId = themeStyleResId;
         return this;
     }
 
     @Override
-    public Class<H> getHelperClass() {
-        return mHelperClass;
+    public Class<? extends BaseDialogHelper<NormalBuilder>> getHelperClass() {
+        return  mHelperClass;
     }
 
     @Override
-    public NormalBuilder setHelperClass(Class<H> cls) {
+    public NormalBuilder setHelperClass(Class<? extends BaseDialogHelper<NormalBuilder>> cls) {
 
         this.mHelperClass = cls;
         return this;
     }
 
-    public GNormalDialog<H> build() {
+    public GNormalDialog build() {
         if(getThemeStyleResId() <= 0){
             mDialog = new GNormalDialog(context, this);
             return mDialog;

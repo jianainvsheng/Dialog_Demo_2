@@ -19,7 +19,7 @@ import spi.java.com.widget_dialog_demo.test.ScreenUtils;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public class UsuallyDialogHelper<H extends UsuallyDialogHelper<H>> extends BaseDialogHelper<NormalBuilder<H>> implements View.OnClickListener{
+public class UsuallyDialogHelper extends BaseDialogHelper<NormalBuilder> implements View.OnClickListener{
 
     private LinearLayout mContainerLayout;
     private TextView mTitleTv;

@@ -16,24 +16,24 @@ import spi.java.com.widget_dialog_demo.dialog.helper.usually.UsuallyDialogHelper
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public class GNormalDialog<H extends BaseDialogHelper<NormalBuilder<H>>> extends BaseDialog< NormalBuilder<H>, H> {
+public class GNormalDialog extends BaseDialog<NormalBuilder> {
 
-    public GNormalDialog(@NonNull Context context, NormalBuilder<H> data) {
+    public GNormalDialog(@NonNull Context context, NormalBuilder data) {
         super(context, data);
     }
 
-    public GNormalDialog(@NonNull Context context, int themeResId, NormalBuilder<H> data) {
+    public GNormalDialog(@NonNull Context context, int themeResId, NormalBuilder data) {
         super(context, themeResId, data);
-    }
-
-    @Override
-    public BaseDialogHelper<NormalBuilder<H>> onCreateDefaultHelp(Context context, NormalBuilder<H> data) {
-        return new UsuallyDialogHelper(context);
     }
 
     public static NormalBuilder onCreateBuiler(Context context){
 
         return new NormalBuilder(context);
+    }
+
+    @Override
+    public BaseDialogHelper<NormalBuilder> onCreateDefaultHelp(Context context, NormalBuilder data) {
+        return new UsuallyDialogHelper(context);
     }
 
     public interface PositiveCallBack {

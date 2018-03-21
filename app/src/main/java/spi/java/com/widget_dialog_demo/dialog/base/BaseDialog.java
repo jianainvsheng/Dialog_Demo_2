@@ -15,9 +15,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public abstract class BaseDialog <D extends IDialogBuilder<D,H>,H extends BaseDialogHelper<D>> extends Dialog implements IDialog<D,H>{
-
-    private H mHelper;
+public abstract class BaseDialog <D extends IDialogBuilder<D>> extends Dialog implements IDialog<D>{
 
     public BaseDialog(@NonNull Context context,D data) {
         super(context);
@@ -31,7 +29,7 @@ public abstract class BaseDialog <D extends IDialogBuilder<D,H>,H extends BaseDi
 
     @Override
     public void initDialog(Context context, D data) {
-        mHelper = onCreateHelper(context,data);
+        BaseDialogHelper<D> mHelper = onCreateHelper(context,data);
         if(mHelper == null){
             BaseDialogHelper<D> mDefaultHelper = onCreateDefaultHelp(context,data);
             if(mDefaultHelper == null){
@@ -54,17 +52,17 @@ public abstract class BaseDialog <D extends IDialogBuilder<D,H>,H extends BaseDi
     }
 
     @Override
-    public H onCreateHelper(Context context, D data) {
+    public BaseDialogHelper<D> onCreateHelper(Context context, D data) {
 
         if(data != null && data.getHelperClass() != null){
-            Class<H> cls = data.getHelperClass();
+            Class<? extends BaseDialogHelper<D>> cls = data.getHelperClass();
             //参数类型数组
             Class[] parameterTypes={Context.class};
             //根据参数类型获取相应的构造函数
             try {
-                java.lang.reflect.Constructor<H> constructor = cls.getConstructor(parameterTypes);
+                java.lang.reflect.Constructor<? extends BaseDialogHelper<D>> constructor = cls.getConstructor(parameterTypes);
                 Object[] parameters={context};
-                H h = constructor.newInstance(parameters);
+                BaseDialogHelper<D> h = constructor.newInstance(parameters);
                 return h;
             } catch (Exception e) {
                 //e.printStackTrace();
@@ -81,14 +79,5 @@ public abstract class BaseDialog <D extends IDialogBuilder<D,H>,H extends BaseDi
      * @return
      */
     public abstract BaseDialogHelper<D> onCreateDefaultHelp(Context context, D data);
-
-    /**
-     * return the helper
-     * @return
-     */
-    public H getHelper(){
-
-        return mHelper;
-    }
 
 }

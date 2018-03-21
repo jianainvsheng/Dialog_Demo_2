@@ -6,7 +6,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public interface IDialogBuilder<D extends IDialogBuilder,H extends BaseDialogHelper<D>> {
+public interface IDialogBuilder<D extends IDialogBuilder> {
 
     /**
      * the theme in the dialog
@@ -24,7 +24,7 @@ public interface IDialogBuilder<D extends IDialogBuilder,H extends BaseDialogHel
      * return the need helper
      * @return
      */
-    public Class<H> getHelperClass();
+    public Class<? extends BaseDialogHelper<D>> getHelperClass();
 
 
     /**
@@ -32,6 +32,6 @@ public interface IDialogBuilder<D extends IDialogBuilder,H extends BaseDialogHel
      * @param cls
      * @return
      */
-    public D setHelperClass(Class<H> cls);
+    public D setHelperClass(Class<? extends BaseDialogHelper<D>> cls);
 
 }
