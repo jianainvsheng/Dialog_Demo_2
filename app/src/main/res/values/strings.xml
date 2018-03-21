@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string name="success_add_to_shopcart">成功加入购物车</string>
+    <string name="groupbuy_search_goods_no_find">宝贝没找到 T_T</string>
+    <string name="favorite_confirm_to_delete">确认删除？</string>
+    <string name="favorite_yes">确定</string>
+
+    <!-- 科大讯飞  上新国美，国美在线，下美信-->
+    <string name="voice_app_id">59e96d65</string>
+    <!--<string name="voice_app_id">5473f997</string>-->
+    <!--<string name="voice_app_id">55191cd7</string>-->
+    <string name="mine_favorite_delete" translatable="false">删除</string>
+    <string name="mine_favorite_select_all" translatable="false">全选</string>
+    <string name="mine_setting_feed_back" translatable="false">意见反馈</string>
+    <string name="mine_feedback_str_hint" translatable="false">请输入您的意见和问题，以帮助我们更好的改进</string>
+    <string name="findcheap_main_earn_money" translatable="false">赚外快</string>
+    <string name="mine_account_more">更多</string>
+
+    <string name="mine_collect_edit" translatable="false">编辑</string>
+    <string name="mine_collect_str_delete" translatable="false">请选择删除项！</string>
+    <string name="mine_collect_str_nogoods" translatable="false">暂无收藏，去逛逛商品吧！</string>
+    <string name="mine_collect_str_noshops" translatable="false">暂无收藏，去逛逛店铺吧！</string>
+    <string name="mine_collect_str_notopic" translatable="false">暂无收藏，去看看话题吧！</string>
+    <string name="mine_collect_str_friend_cicle" translatable="false">暂无收藏，去看看朋友圈吧！</string>
+    <string name="mine_collect_str_no_topic" translatable="false">您还没有发布任何话题吶</string>
+    <string name="mine_collect_str_success_delete" translatable="false">删除成功!</string>
+    <string name="mine_collect_str_fail_delete" translatable="false">删除失败!</string>
+    <string name="mine_collect_str_money" translatable="false">¥</string>
+    <string name="mine_collect_str_time" translatable="false">收藏时间 : </string>
+    <string name="mine_feedback_not_audit" translatable="false">未处理</string>
+    <string name="mine_feedback_audit" translatable="false">已处理</string>
+    <string name="mine_feedback_audit_fail" translatable="false">处理中</string>
+    <string name="mine_user_upload_success" translatable="false">上传成功!</string>
+    <string name="im_please_check_net_config">当前网络不可用，请检查网络设置</string>
+    <string name="mine_feedback_publish_hint" translatable="false">文字、图片不能全为空，请填写后重新发送!</string>
+    <string name="mine_feedback_publish_leave_message" translatable="false">请选择留言类型!</string>
+    <!--  找便宜  -->
+    <string name="findcheap_main_title">返利专区</string>
+    <string name="findcheap_main_earnmoney_rebate">最高返¥%1$.2f</string>
+    <string name="findcheap_back">返</string>
+    <string name="findcheap_product_title">商品标题</string>
+    <string name="findcheap_product_money">¥0.00</string>
+    <!-- Common通用字符串 -->
+    <string name="back">""</string>
+    <string name="server_busy">服务器繁忙，请您稍后再试</string>
+    <string name="empty">暂无相关商品</string>
+    <string name="no_more">暂无更多商品</string>
+    <string name="no_more_order">暂无更多订单</string>
+    <string name="loading">载入中...</string>
+    <string name="submit">提交</string>
+    <string name="prompt">提示</string>
+    <string name="delete">删除</string>
+    <string name="finish">完成</string>
+    <string name="init_err">网络不给力</string>
+    <string name="yuan_sign">¥</string>
+    <string name="isopenloaction">是否开启您的定位？</string>
+    <string name="free_freight">免运费</string>
+    <string name="now_not_have_price">暂无价格</string>
+    <string name="can_not_connect_net_hint">哦喔，没有网络了呀,请检查您的网络设置!</string>
+    <!-- 版本更新 -->
+    <!-- 首页 -->
+    <string name="app_name">国美</string>
+    <string name="search">搜索</string>
+    <string name="search_groupbuy_goods">搜索团购商品</string>
+    <!-- 更多 -->
+    <string name="more">更多</string>
+    <string name="settings">设置</string>
+    <string name="gome_stores">国美门店</string>
+    <string name="browser_history">我的足迹</string>
+    <string name="announcement">商城公告</string>
+    <string name="announcement_detail">公告详情</string>
+    <string name="promotion_detail">活动详情</string>
+    <string name="cashOnDelivery_title_desc">送货上门后付款,支持现金、刷卡支付</string>
+    <string name="onlinePayment_title_desc">支持储蓄卡、信用卡及第三方支付平台</string>
+    <string name="storePick_title_desc">可选择就近的国美门店自提</string>
+    <string name="help">帮助</string>
+    <string name="check_update">检查更新:</string>
+    <string name="current_version">当前版本</string>
+    <string name="server_hotline">客服电话:</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="mygome_confirm_receipt_title">确认收货</string>
+    <string name="mygome_confirm_receipt_desc">您是否确认收货?</string>
+    <string name="start_location">开启定位</string>
+    <string name="are_you_sure_clear_cache">确定清除缓存吗？</string>
+    <string name="login_out">退出登录</string>
+    <string name="login_out_ok">退出登录成功</string>
+    <string name="use_help">使用帮助</string>
+    <string name="about">关于</string>
+    <string name="store_self_help">自提帮助</string>
+    <string name="store_self_process">自提流程</string>
+    <string name="store_self_matter">注意事项</string>
+    <string name="store_self_explain">特殊说明</string>
+    <string name="store_self_friend">友好提示</string>
+    <string name="version_desc">For Android</string>
+    <string name="copyright_desc">Copyright © 2015-2018 \n All Rights Reserved</string>
+    <string name="author_desc">美信网络技术有限公司版权所有</string>
+    <string name="delivery_progress">配送流程</string>
+    <string name="security_payment">安全支付</string>
+    <string name="sale_server">售后服务</string>
+    <string name="server_number">4008-708-708</string>
+    <string name="call_server_number">tel:4008-708-708</string>
+    <string name="time">时间:</string>
+    <string name="you_have_no_product_browse_history">您还没有浏览记录</string>
+    <string name="is_use_you_now_loaction">是否允许使用您当前的位置？</string>
+    <string name="is_use_you_now_yes">好</string>
+    <string name="is_use_you_now_no">不允许</string>
+    <string name="more_gomestore_now_city">当前定位城市:</string>
+    <string name="more_gomestore_feedback">意见反馈</string>
+    <string name="more_gomestore_feedback_your_feed_hint">写下您的建议吧</string>
+    <string name="more_gomestore_feedback_your_email_hint">您的邮箱:(选填)</string>
+    <string name="more_gomestore_feedback_your_feed_null">您还没写建议哦。</string>
+    <string name="more_gomestore_feedback_your_feed_error_formt">请输入5-70个文字</string>
+    <string name="more_gomestore_feedback_your_email_error_formt">请输入正确的邮箱地址</string>
+    <string name="more_gomestore_feedback_submit_success">谢谢，我们会更好哒。</string>
+    <string name="more_gomestore_feedback_submit_fail">提交失败！</string>
+    <string name="more_gomestore_feedback_submit_neterror_plaease_retry">网络异常，请重新提交</string>
+    <!-- 分类 -->
+    <string name="category">分类</string>
+    <string name="phone_recharge_promotion_price_null">促销优惠</string>
+    <string name="please_input_question_content">请填写您要咨询的内容</string>
+    <string name="please_input_question_content_10">咨询内容不得少于1个字</string>
+    <string name="please_input_question_content_200">咨询内容不得多于200个字</string>
+    <string name="please_input_question_content_seconds">您提交的咨询太频繁，请耐心等待一分钟</string>
+    <string name="product_price">价格</string>
+    <string name="please_login_first">请先登录</string>
+    <!-- 新版详情 -->
+    <string name="product_detail_get_coupon">领取优惠券</string>
+    <string name="product_detail_shop_coupon_desc">(仅限本店使用)</string>
+    <string name="product_detail_blue_coupon_desc">(仅限本商品使用)</string>
+    <!-- 购物车 -->
+    <!--<string name="shopping_order_paymentpage_submit_notpayment">您的订单已提交，支付完成后我们将立即为您发货。</string>-->
+    <string name="shopping_cart">购物车</string>
+    <string name="shopping_cart_empty_cart_new">篮子空空~ 去买点啥呢</string>
+    <string name="shopping_cart_empty_cart_tip">这里什么都没有</string>
+    <string name="shopping_cart_look_fav">看收藏</string>
+    <string name="shopping_cart_stroll_new">先逛逛</string>
+    <string name="shopping_cart_edit">编辑</string>
+    <string name="shopping_cart_accomplish">完成</string>
+    <string name="shopping_cart_delete">删除</string>
+    <string name="shopping_cart_settle_accounts">去结算</string>
+    <string name="shopping_cart_confirm">确定</string>
+    <!--购物车改版-->
+    <string name="shopping_cart_nologin_tipe">登录后同步电脑和手机购物车中的商品</string>
+    <string name="shopping_cart_select_goods_count">选择件数</string>
+    <string name="shopping_cart_goto_promotion_rush">立即抢购</string>
+    <string name="shopping_cart_yuyueing">预约中..</string>
+    <string name="shopping_cart_select_all_goods">全选</string>
+    <string name="shopping_cart_save_move_goods_tofavorite">移入收藏</string>
+    <string name="shoopng_cart_yuefei_top_navagate_title">运费说明</string>
+    <string name="shoopng_cart_multiple_type_settlement_choose">海外购商品与其他商品请分开结算</string>
+    <string name="shopping_cart_bj_next">继续点击，查看下一件降价商品~~</string>
+    <string name="shopcart_favorite_dialog">当前选中的%s款商品收藏成功后，\n将会从购物车删除，请您确认</string>
+    <string name="shopcart_delete_dialog">确认要删除这%s款商品吗？</string>
+    <!--节能补贴-->
+    <string name="energy_choose_identify_verify_page_title">选择身份类型</string>
+    <string name="energy_choose_next">下一步</string>
+    <string name="energy_saving_deadline_tip">若有到期续签请务必上传续签页</string>
+    <string name="energy_choose_subsidy_tip1">补贴对象：</string>
+    <string name="energy_choose_subsidy_tip2">补贴标准：</string>
+    <string name="energy_choose_subsidy_tip3">补贴产品：</string>
+    <string name="energy_choose_live_verify">北京居住证</string>
+    <string name="energy_choose_stay_verify">北京暂住证</string>
+    <string name="energy_saving_identify_verify_upload_soldier">军人证里面</string>
+    <string name="energy_savinge_identify_verify_upload_live">居住证里面</string>
+    <string name="energy_saving_identify_verify_upload_foundation">客户基础信息页</string>
+    <string name="energy_saving_identify_verify_upload_stay">暂住证里面</string>
+    <string name="energy_leave_dialogmsg">您尚未保存已经修改的资格认证信息，请确认是否离开？</string>
+    <string name="energy_saving_identify_verify_error_upload_identify_other1">请上传军人证里面</string>
+    <string name="energy_saving_identify_verify_error_upload_identify_other2">请上传居住证里面</string>
+    <string name="energy_saving_identify_verify_error_upload_identify_other3">请上传客户基础信息里面</string>
+    <string name="energy_saving_identify_verify_error_upload_identify_other4">请上传暂住证里面</string>
+    <string name="energy_next_dialogmsg">收货时请准备好您选择的证件原件并且确保本人签收！</string>
+    <string name="energy_choose_subsidy_content3">1.电视机、电冰箱、洗衣机、空调、热水器及吸油烟机单品6类能效标识为中国能效标识一级或二级的大家电产品。\n2.空气净化器。</string>
+    <string name="energy_choose_subsidy_content1">北京市户籍人员；驻京部队现役军人和现役武警；持有有效《北京市工作居住证》的非本市户籍人员；持有北京市有效暂住证的非本市户籍人员。</string>
+    <string name="energy_saving_identify_verify_encryption">您的身份信息将予以加密保护，仅用于办理本次节能减排业务</string>
+    <string name="energy_saving_identify_verify_top_tipe">按照北京市商务委节能减排政策规定，您在购买节能补贴商品时，请提供实名信息和证件照片并通过审核，收货时需本人签收并出示证件原件供配送员审验。</string>
+    <string name="energy_saving_identify_verify_error_upload_identify_front">请上传身份证正面</string>
+    <string name="energy_saving_identify_verify_error_upload_identify_behind">请上传身份证背面</string>
+    <string name="energy_saving_identify_verify_error_fill_name_proplem">请填写您的真实姓名</string>
+    <string name="energy_saving_identify_verify_error_fill_identify_proplem">请正确填写18位身份证号</string>
+    <string name="energy_saving_identify_verify_error_fill_other_certificate_proplem">请正确填写您的证件编号</string>
+    <string name="energy_saving_identify_verify_error_choose_get_photo">非法文件，请选择正确图像</string>
+    <string name="shopping_goods_new_totalprice_no_fare">总计:</string>
+    <string name="shopping_goods_pay_method_null">支付方式</string>
+    <string name="shopping_goods_pay_show_pack_store_title">查看自提门店</string>
+    <string name="shopping_goods_distribution_method_null">配送方式</string>
+    <string name="shopping_goods_distribution_time_null">配送时间</string>
+    <string name="shopping_goods_distribution_phone_confirm_null">是否送货前电话确认</string>
+    <string name="shopping_goods_invoice_info_null">发票信息</string>
+    <string name="shopping_goods_invoice_type_null">发票类型</string>
+    <string name="shopping_goods_invoice_type_elec">电子发票</string>
+    <string name="shopping_goods_use_mtk">美通卡</string>
+    <string name="shopping_goods_use_mkl">使用美口令</string>
+    <string name="shopping_goods_invoice_type_paper">纸质发票</string>
+    <string name="shopping_goods_invoice_title_null">发票抬头</string>
+    <string name="orderfill_invoice_info_title">发票信息</string>
+    <string name="shopping_goods_invoice_receiverinfo_title">收票人信息</string>
+    <string name="shopping_goods_invoice_content_null">发票内容</string>
+    <string name="shopping_goods_invoice_content_not_need">暂不需要发票</string>
+    <string name="shopping_goods_invoice_content_need">暂不需要发票</string>
+    <string name="shopping_goods_use_balance_used">使用国美币</string>
+    <string name="shopping_goods_use_mfb_balance_used">使用美盈宝余额</string>
+    <string name="shopping_goods_use_allowance">节能补贴</string>
+    <string name="shopping_goods_order_shipping_mark">备        注</string>
+    <string name="shopping_goods_order_mark_hint">15字以内</string>
+    <string name="shopping_goods_order_freight_null">运费</string>
+    <string name="shopping_goods_order_goods_price_null">商品总计</string>
+    <string name="shopping_goods_order_goods_amount_due">应付金额:</string>
+    <string name="shopping_goods_preorder_goods_amount_due">定金总计</string>
+    <string name="shopping_goods_order_goods_order_submit_sub">提交订单</string>
+    <string name="shopping_goods_order_goods_order_fill">填写订单</string>
+    <string name="shopping_goods_order_payment_onlinepay">在线支付</string>
+    <string name="shopping_goods_order_payment_cashpayment">货到付款</string>
+    <string name="shopping_goods_order_virtualaccount_pay">余额支付</string>
+    <string name="shopping_goods_order_payment_cash_gomeexmp">国美快递</string>
+    <string name="shopping_goods_order_success_orderprice">应付金额：</string>
+    <string name="shopping_goods_order_success_paymethod">支付方式：</string>
+    <string name="shopping_goods_order_success_payment_yinlian">银联手机支付</string>
+    <string name="shopping_goods_order_success_payment_pingan">壹钱包</string>
+    <string name="shopping_cart_order_consinfo">收货人信息填写不完整</string>
+    <string name="shopping_cart_order_payment">支付方式填写不完整</string>
+    <string name="shopping_cart_order_shippment">配送方式填写不完整</string>
+    <string name="shopping_cart_order_invoice">发票信息填写不完整</string>
+    <string name="shopping_orderfill_invoice_aptitude">发票资质</string>
+    <string name="shopping_orderfill_invoice_UAT_send_title">增票寄送</string>
+    <string name="shopping_orderfill_invoice_UAT_send_companyName">单位名称：</string>
+    <string name="shopping_orderfill_invoice_UAT_taxpayer_num">纳税人识别号：</string>
+    <string name="shopping_orderfill_invoice_UAT_register_address">注册地址：</string>
+    <string name="shopping_orderfill_invoice_UAT_register_phone">注册电话：</string>
+    <string name="shopping_orderfill_invoice_UAT_depositback">开户银行：</string>
+    <string name="shopping_orderfill_invoice_UAT_backAccount">银行账户：</string>
+    <string name="shopping_orderfill_shipping_select">选择配送方式</string>
+    <string name="shopping_orderfill_shipping_elsegoods_time">其他商品配送时间</string>
+    <string name="shopping_orderfill_shipping_remarks">备注：</string>
+    <string name="shipping_orderfill_coupon">优惠券</string>
+    <string name="coupon_orderfill_balance">余额</string>
+    <string name="coupon_orderfill_gomemoney">国美币</string>
+    <string name="orderfill_discount_salesreturn_integral_tip">退货时，将以红券的方式返还给您</string>
+    <string name="orderfill_discount_storeintegral_name">门店积分</string>
+    <string name="orderfill_discount_storeintegral_exchange_name">兑换</string>
+    <string name="orderfill_discount_myb">美盈宝</string>
+    <string name="orderfill_ordinary_costlist_usecoupon">使用优惠券</string>
+    <string name="orderfill_ordinary_costlist_useintegral">使用美豆</string>
+    <string name="orderfil_coupon_fragment_title">激活优惠券</string>
+    <string name="orderfil_oversea_identity_title">个人信息</string>
+    <string name="orderfill_inputaddNetinfo">入网信息</string>
+    <string name="orderfill_decideaddNetprotocol">入网协议</string>
+    <string name="orderfill_phoneUserName">机主姓名</string>
+    <string name="orderfill_phoneUser_identitycard">身份证号</string>
+    <string name="orderfill_phoneUser_useTariff">入网当月资费:</string>
+    <!-- 购物车 end-->
+    <!--填写订单，选择支付方式页面 start -->
+    <string name="orderfill_select_paymentway">选择支付方式</string>
+    <string name="orderfill_select_confirm">确定</string>
+    <string name="orderfill_select_storepick_tip">门店自提付款方式</string>
+    <string name="orderfill_select_gomestore_tip">支付门店</string>
+    <string name="orderfill_select_gomestore_pleaseselect">请选择支付门店</string>
+    <string name="orderfill_select_gomestore_modify">修改</string>
+    <!--填写订单，选择支付方式页面 end -->
+    <!--填写订单 start-->
+    <string name="orderfill_phonenum">手机号码</string>
+    <string name="orderfill_pre_phonemub_hint">请填写尾款支付手机号码</string>
+    <string name="orderfill_pre_getAuthCode">获取验证码</string>
+    <string name="orderfill_mkl_title">美口令：</string>
+    <string name="orderfill_mkl_input_tip">使用美口令，请输入</string>
+    <!--填写订单 end-->
+    <!-- 支付宝 -->
+    <!-- 搜索 -->
+    <string name="search_history">搜索历史</string>
+
+    <string name="search_keyword">请输入关键字</string>
+
+    <!-- 团购 -->
+    <string name="groupbuy_home_title">团购</string>
+    <string name="groupbuy_rebbed">卖光了</string>
+    <!--<string name="groupbuy_already_groupon">人已参团</string>-->
+    <string name="groupbuy_business_phone">电话:</string>
+    <!--<string name="groupbuy_limit_everyone">限购</string>-->
+    <string name="groupbuy_next">下一步</string>
+    <string name="groupbuy_no_start">未开始</string>
+    <string name="groupbuy_already_end">已结束</string>
+    <string name="new_groupbuy_is_onlysee_proprietary">只看自营</string>
+    <string name="groupbuy_enter_search_word">请输入相关搜索词</string>
+    <string name="groupbuy_enter_search_condition">请输入搜索条件!</string>
+    <string name="groupbuy_soon_start">即将开团</string>
+    <string name="groupbuy_home_name">团购首页</string>
+    <string name="groupbuy_sort_default">综合</string>
+    <string name="groupbuy_sort_discount">价格</string>
+    <string name="groupbuy_sort_time">时间</string>
+    <string name="groupbuy_not_start">未开始</string>
+    <string name="groupbuy_sell_out">已抢光</string>
+    <!-- 条码购 -->
+    <!-- 限时抢购 -->
+    <string name="panic_buying_title">hi抢购</string>
+    <string name="panic_buying_finished">已结束</string>
+    <string name="panic_buying_doing">抢购进行时</string>
+    <string name="panic_buying_remind_me">提醒我</string>
+    <string name="panic_buying_until_start">距开始</string>
+    <string name="panic_buying_until_finished">距结束</string>
+    <string name="panic_buying_begin_countdown">开抢倒计时</string>
+    <string name="panic_buying_more_than_three_days">3天以上</string>
+    <string name="panic_buying_review_superior_quality">往期精品回顾</string>
+    <string name="panic_buying_not_buy_yet_tip">商品暂未开抢，敬请期待</string>
+    <string name="panic_buying_buy_right_now_tip">商品已开抢，赶紧下手</string>
+
+    <string name="limitbuy_imbuy">立即抢购</string>
+    <string name="limitbuy_not_yet_start">尚未开始</string>
+    <string name="limitbuy_confirm_tile">填写订单</string>
+    <!-- 抢购新增 -->
+    <string name="weipinhui02">品牌精选</string>
+    <!-- 抢购相关（优化）start-->
+    <!-- 抢购相关（优化）end-->
+    <string name="get_check_code">免费获取验证码</string>
+    <string name="get_phone_check_code">获取短信验证码</string>
+    <string name="find_password_describe">短信已发送到您的手机，如在120秒之内还没有收到短信验证码，请重新获取验证码</string>
+    <string name="gegain_check_code">重新获取</string>
+    <string name="getagain_check_password">重新获取</string>
+    <string name="regain_parity_check_code_later">秒后重新获取</string>
+    <string name="input_check_code">请输入6位验证码</string>
+    <string name="input_check_code_find">请输入验证码</string>
+    <string name="input_check_code_login">请输入4位验证码</string>
+    <string name="check_code_declare">[提示]\n1.点击＂免费获取验证码＂,系统将自动发送验证码短信，激活后将绑定您的手机\n2.您可以用手机号登录国美\n3.我们将第一时间短信通知您，便于您及时获知订单状态</string>
+    <string name="account_name">用户名:</string>
+    <string name="login_gome_user_mobile">(您还可以用手机号登录国美)</string>
+    <string name="cannot_send_message">校验短信发送时间间隔过短，不能发送</string>
+    <string name="fail_to_activate_account">未能激活账号，请重新激活</string>
+    <string name="auth_account">验证账户信息</string>
+    <string name="complete_verified">您已完成手机验证！</string>
+    <string name="fill_phone_auth_info">为了您账户交易安全，\n请填写手机验证信息</string>
+    <string name="enter_your_phone_number">请输入您的手机号</string>
+    <string name="phone_number_errors">手机号格式错误</string>
+    <string name="cannot_complete_shipping_information">取消验证账户信息，将无法完成购物哦~您要退出验证吗？</string>
+    <string name="validation_successful">验证成功</string>
+    <string name="validation_mobile">验证手机</string>
+    <string name="setting_new_pay_password">设置新密码</string>
+    <string name="get_quick_password">获取密码</string>
+    <string name="regedit_password_warn">此手机号用于登录国美,点击“获取密码”,系统会自动下发一条登录密码短信</string>
+    <string name="regedit_password_msg">请输入短信密码</string>
+    <string name="regedit_password_msg_warn">1、填入收到的短信密码，点击注册，即可用手机号和密码登录\n2、如在120秒内未收到未收到短信，可点击“重新获取按钮”来重新获取密码</string>
+    <string name="login_modify_password_warn">建议定期更换密码，且会员卡密码只能是6位数字。</string>
+    <string name="login_modify_password_warn_normal">建议定期更换密码，且设置一个包含字母加数字或下划线，长度为6-20个字符的密码。</string>
+    <string name="retrieve_password_msg">【提示】仅限手机号已验证和手机号注册用户找回密码</string>
+    <string name="password_notice">请使用数字和字母或符号的组合，6-20个字符</string>
+    <string name="can_login_use_phone_num">您可以使用手机号登录 : %s</string>
+    <!-- 我的国美 -->
+    <string name="mygome_gome_meidou">美豆</string>
+    <string name="mygome_fav_myapprise">我的评价</string>
+    <string name="mygome_payment_password">账户安全</string>
+    <string name="mygome_my_fav_delete_product">确定删除此商品吗？</string>
+    <string name="mygome_edit">编辑</string>
+    <string name="mygome_consulting_reply">咨询回复</string>
+    <string name="mygome_default_coupon_code">请输入优惠券编号</string>
+    <string name="mygome_activate_identifying_null">验证码不能为空</string>
+    <string name="mygome_activate_coupon_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="mygome_coupon_activate_success">优惠券激活成功</string>
+    <string name="mygome_coupon_activate_failed">优惠券激活失败</string>
+    <string name="mygome_coupon_activate_success_left">您成功激活一张</string>
+    <string name="mygome_coupon_activate_success_right">，请至我的优惠券查看优惠券详情。</string>
+    <string name="mygome_activate_desc"> <![CDATA[优惠券获得途径? <br/>
+ 			<br/>
+         用户一般可以通过以下途径获得优惠券： <br/>
+     1、促销活动指定界面领取； <br/>
+     2、购物订单赠送优惠券，待确认收货后获得； <br/>
+     3、消费积分兑换优惠券； <br/>
+     4、成功参与家电维修、家电回收服务获得。  <br/>]]> </string>
+    <string name="mygome_myappoint_rules_content">温馨提示:\r\n\r\n● 购买预约商品，需先进行预约，预约成功即获得购买资格\r\n\r\n● 抢购开始后，仅预约用户可参与抢购；每人限购一件，先到先得</string>
+    <string name="mygome_coupon_list_title">优惠券</string>
+
+    <string name="mygome_coupon_list_use_desc">使用规则</string>
+    <string name="mygome_coupon_add">激活优惠券</string>
+    <string name="mygome_coupon_goto_center">去领券中心看看</string>
+    <string name="mygome_coupon_no_used_data">暂无已使用优惠券</string>
+    <string name="mygome_coupon_no_data_add">激活优惠券</string>
+    <string name="mygome_coupon_no_data_goto_center">去领券中心</string>
+    <!--我的国美end-->
+    <!--美通卡-->
+    <!-- 用户订单详情 -->
+    <string name="shipping_type_null">配送方式</string>
+    <string name="tel_bef_shipping_ok">送货前电话确认</string>
+    <string name="pay_now">立即支付</string>
+    <string name="invoice_info">发票信息</string>
+    <string name="orderfill_invoice_item">发票选项</string>
+    <string name="VAT_invoice">增值税发票</string>
+    <string name="confirm_receipt">确认收货</string>
+    <string name="confirm_receipt_err">确认收货失败</string>
+    <string name="goods_list">商品清单</string>
+    <string name="del_collection_ok">删除成功!</string>
+    <string name="cancel_order_ok">您的订单已取消</string>
+    <string name="cancel_order_err">取消订单失败!</string>
+    <string name="order_commplete_ok_notice">感谢您在国美购物，欢迎下次光临!</string>
+    <string name="yes_or_no_cancel_order">确认取消此订单？</string>
+
+
+    <!-- 八叉乐统计常量数据 -->
+    <string name="appMeas_firstPage">首页</string>
+    <string name="appMeas_shoppingCart">购物车</string>
+    <string name="appMeas_shoppingCart_guess_you_like">购物车:猜你喜欢</string>
+    <string name="appMeas_fav_product">商品收藏</string>
+    <string name="appMeas_searchlist">站内搜索: 搜索结果页面</string>
+    <string name="appMeas_categoryPage">分类浏览</string>
+    <string name="appMeas_history">浏览历史</string>
+    <string name="appMeas_bestGome">最国美</string>
+    <!-- 掌上专享 -->
+    <string name="appMeas_special">掌上专享</string>
+    <string name="appMeas_special_la_init">继续上拉切换到下一场次&gt;</string>
+    <string name="appMeas_special_la_load">释放切换到下一场次&gt;</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">用户取消</string>
+    <string name="errcode_deny">用户拒绝</string>
+    <string name="errcode_unknown">用户返回</string>
+    <!-- 手机充值订单部分 -->
+    <string name="phone_recharge_re_purchase">再次购买</string>
+    <string name="please_write_11_num">请输入11位手机号</string>
+    <string name="phone_recharge_num_error">手机号格式错误</string>
+    <!-- 消息推送 -->
+    <!-- 预售 -->
+    <!-- 找回密码 -->
+    <string name="find_password">找回密码</string>
+    <!-- 引导页 -->
+    <string name="find_password_get_phone_code">验证码错误</string>
+    <string name="login_out_or_no_login">对不起，您还没有登录或登录已超时，请登录。</string>
+    <!-- 游戏列表 -->
+    <string name="down_url_null">数据异常，请稍后重试</string>
+    <string name="down_net_null">当前无网络，请检查您的网络设置</string>
+    <!-- 预约购买 -->
+    <string name="reserve_get_phone_check_code">获取验证码</string>
+    <!-- o2o门店联盟 -->
+    <string name="o2o_bind_store_tip">为了提供更优质的服务，请填写服务您的员工编号：</string>
+    <string name="o2o_bind_input_hint">请填写门店员工编号</string>
+    <string name="o2o_bind_online_btn_hint">立即绑定</string>
+    <string name="o2o_bind_offline_btn_hint">离线绑定</string>
+    <string name="o2o_bind_skip_text">跳过此步</string>
+    <!-- 多渠道电子券 -->
+    <string name="user_electronic_ticket_rule">使用规则</string>
+    <string name="user_discount_ticket_rule">国酷券使用范围</string>
+    <string name="user_discount_ticket_instruction">国酷券使用说明</string>
+    <string name="user_g3pp_help">计时达与限时达</string>
+    <string name="product_show_instalment_detail">分期付款详情</string>
+    <string name="product_show_yanbao_detail">延保说明</string>
+    <string name="product_show_yanbao_hetong">延保合同</string>
+    <string name="server_zhizun_info">亲~，如果您在购物中有任何疑问，可随时电话咨询我们，我们将有店员一对一为您解答。</string>
+    <!-- 抢购订单 -->
+    <!-- 订单详情 -->
+    <string name="od_modify">修改</string>
+    <!-- 抢购订单 -->
+    <!-- 订单优化 -->
+    <string name="orderlist_tishi">您暂无相关订单</string>
+    <string name="orderlist_myshopping_cart">我的购物车</string>
+    <string name="package_message">尊敬的客户,由于您购买的商品不在同一库房,您的订单将分为num个包裹分开配送,给您带来的不便敬请谅解.</string>
+    <string name="order_delete_title">您确定删除订单吗?</string>
+    <string name="order_delete_content">删除的订单可在订单回收站中查看,回收站的订单不可进行评价晒单和申请退换货等操作!</string>
+    <string name="order_revert_success">还原成功，还原订单可在全部订单中查看</string>
+    <string name="order_follow">订单跟踪</string>
+    <string name="order_comment">评价晒单</string>
+    <string name="order_deleteforever">永久删除</string>
+    <string name="order_revert">还原</string>
+    <string name="order_delete_forever_title">您确定要永久删除该订单吗？</string>
+    <string name="order_delete_forever_content">永久删除后，订单将无法恢复，且将无法对该订单商品申请售后服务，请谨慎操作！</string>
+
+
+    <!--  语音充值 -->
+    <!-- 10 | 10元 | 10块 | 20 | 30 | 50 | 100 | 一百 | 200 | 二百 | 300 | 三百 | 500 | 五百-->
+    <!--神码 start-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--神码 end-->
+    <!-- 抢购改版 start-->
+    <!--<string name="limitbuy_deliver_goods">发货并负责售后服务。</string>-->
+    <!--<string name="limitbuy_deliver_goods_gome">配送并提供保障监管</string>-->
+    <!-- 抢购改版 end-->
+    <!--海外购身份验证页面 start -->
+    <string name="overseabuy_authentication">身份验证</string>
+    <string name="overseabuy_authentication_name">姓\u2000\u2000\u2000\u2000名</string>
+    <string name="overseabuy_authentication_name_hint">请输入姓名</string>
+    <string name="overseabuy_authentication_identitycard">身份证号</string>
+    <string name="overseabuy_authentication_identitycard_hint">请输入中国居民身份证号</string>
+    <string name="overseabuy_authentication_tip_user">请填写正确个人信息，并授权我们向海关进行申报，您的信息将被妥善保管和使用。</string>
+    <string name="overseabuy_authentication_confirm">确定</string>
+    <string name="overseabuy_authentication_inputtip">请填写正确个人信息，以便通报海关</string>
+    <!--海外购身份验证页面 end -->
+    <!--新优惠券begin-->
+    <string name="activate_coupons_number">编\t\t号：</string>
+    <string name="activate_coupons_activation_code">激活码：</string>
+    <string name="activate_coupons_check_code">验证码：</string>
+    <string name="activate_coupons_prompt_coupons_invalid">您输入的优惠券无效</string>
+    <string name="activate_coupons_prompt_coupons_error">激活码有误，请重新输入</string>
+    <string name="activate_coupons_prompt_check_code_error">验证码错误</string>
+    <string name="constact_customer_service_number">4008-708-708</string>
+    <string name="coupon_new_cooupon_help">优惠券使用规则</string>
+    <!--新优惠券end-->
+    <string name="setting_home_setting">设置</string>
+    <string name="mygome_waitting_pay_select">筛选</string>
+    <string name="mygome_send_comment">商品评价</string>
+    <string name="more_announce_title">商城公告</string>
+
+    <string name="my_wallet_title">我的钱包</string>
+    <!--国美精选begin-->
+    <string name="gome_choiceness">国美精选</string>
+    <string name="gome_product_forestall">新品抢先</string>
+    <string name="gome_product_forestall_des">商品抢先看</string>
+    <!--国美精选end-->
+    <string name="gome_product_voucher_already">已领取</string>
+    <string name="gome_product_voucher_over">已领光</string>
+    <!--消息中心start-->
+    <string name="message_center_home_page_title">消息中心</string>
+    <string name="message_center_home_page_title_setting">设置</string>
+    <string name="message_center_home_page_customer">在线客服</string>
+
+
+    <string name="msg_center_secivce">点击查看您与客服的沟通记录</string>
+    <!--消息中心end-->
+    <!--我的国美begin-->
+
+
+    <string name="mygome_body_all_order_title">全部订单</string>
+    <string name="mygome_gift_recive_no_data">哇塞,你的礼物盒居然是空的~</string>
+    <string name="mygome_gift_send_no_data">侬晓得伐~感情是需要经营哒!</string>
+    <string name="mygome_gift_send">快去选礼物</string>
+    <string name="mygome_account_modify_user_birthday_title">是否确认设置</string>
+    <string name="mygome_account_modify_user_birthday_desc">您的生日一旦设置，将无法更改，请仔细核对</string>
+
+    <string name="mygome_logout_title">确定退出登录吗?</string>
+    <string name="mygome_userphoto_take_photo">拍照</string>
+    <string name="mygome_userphoto_ablum">手机相册</string>
+
+    <string name="mygome_delete_address_title">您确定删除此收货地址吗?</string>
+
+    <string name="mygome_setting_clear_ip_title">"确认要清除所有手动输入IP恢复默认并重启吗？"</string>
+    <!--微信二维码-->
+    <string name="gome_weixin_barcode">gome_weixin_barcode</string>
+    <!--message center-->
+    <string name="my_gome_message_promotion_item_detail">查看详情</string>
+    <string name="mygome_body_select_wait_pay">待支付</string>
+    <string name="mygome_body_select_wait_reciver">待收货</string>
+    <string name="mygome_body_select_wait_comment">待评价</string>
+    <string name="mygome_body_select_good_back">退款/售后</string>
+
+    <string name="mygome_body_select_coupon">优惠券</string>
+    <string name="mygome_body_select_integral">美豆</string>
+
+    <string name="myaccount_detail_title">填写详细资料</string>
+    <string name="myaccount_item_user_title">头像</string>
+    <string name="myaccount_item_user_name_title">用户名</string>
+    <string name="myaccount_item_user_nick_title">昵称</string>
+    <string name="myaccount_item_user_qr_code">我的二维码</string>
+    <string name="myaccount_item_user_home_page">我的主页</string>
+    <string name="myaccount_item_user_birthday_title">出生日期</string>
+
+    <string name="myaccount_item_user_recommend_person">推荐人</string>
+    <string name="myaccount_item_user_my_fav">我的兴趣</string>
+
+    <string name="myaccount_item_user_safety_title">账户安全</string>
+    <string name="myaccount_item_user_sex_title">性别</string>
+    <string name="my_gome_setting_recive">接收新消息通知</string>
+    <string name="myaccount_data_null">未填写</string>
+    <string name="myaccount_data_no_select">未选择</string>
+    <string name="myaccount_modify_nick_title">请输入昵称</string>
+    <string name="myaccount_modify_nick_input_count">4-20个字符，由中英文、数字、”_”、”-”组成</string>
+    <string name="myaccount_modify_nick_title_middle">昵称</string>
+    <string name="myaccount_modify_sex_title_middle">性别</string>
+    <string name="myaccount_modify_nick_title_submit">确定</string>
+    <string name="myaccount_modify_nick_name_null">请输入您的昵称</string>
+    <string name="myaccount_modify_sex_title_man">男</string>
+    <string name="myaccount_modify_sex_title_women">女</string>
+    <string name="my_gome_address_delete">删除</string>
+    <string name="my_gome_address_edit">编辑</string>
+    <string name="my_gome_adddress_default_adr">默认地址</string>
+    <string name="myaccount_select_birthday_title">选择出生日期</string>
+    <string name="myaccount_select_cancel">取消</string>
+    <string name="myaccount_select_submit">确认</string>
+    <string name="setting_auto_update">自动升级</string>
+    <string name="setting_flow">智能省流量</string>
+    <string name="setting_reciver_message">接收新消息通知</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_check_update">检测更新</string>
+    <string name="setting_about_us">关于我们</string>
+
+    <string name="result_update_nick_name_success">修改昵称成功</string>
+    <string name="result_update_sex_success">修改性别成功</string>
+    <string name="result_update_sex_fail">修改性别失败</string>
+    <string name="result_update_birthday_success">修改生日成功</string>
+    <string name="my_gome_no_data">暂时没有相关内容，过会儿来看看吧</string>
+    <string name="logistics_information">您还没有物流信息</string>
+    <string name="my_gome_about_save">保存</string>
+
+    <!--设置省流量模式-->
+    <string name="toast_open_low_quality">非WiFi网络开启低质量图片省流量模式。</string>
+    <!--我的国美end-->
+    <!-- wap相关-->
+    <string name="wap_start_remind">首发提醒</string>
+    <string name="wap_sales_templates">综合模板</string>
+    <string name="wap_sales_found_beauty">发现美</string>
+    <string name="wap_sales_product_search">搜索商品</string>
+    <string name="wap_sales_activity">wap活动</string>
+    <string name="wap_data_failed">读取数据失败，请检查网络情况</string>
+    <string name="wap_bonus_share">国美过生日喽，今天你去抢红包了么？每10分钟就有2418个红包可抢，将活动分享到微信朋友圈，每有1个好友参加，你就可再多得1个红包！快分享到朋友圈，邀请好友一起参加吧！</string>
+    <string name="wap_bonus_down_client">\u2000下载国美客户端:\u2000</string>
+    <string name="wap_shop_home_search_product">搜索店铺内商品</string>
+    <string name="wap_shop_home_all_category">全部类目</string>
+    <string name="wap_shop_home">店铺首页</string>
+    <string name="wap_shop_home_all_product">全部商品</string>
+    <string name="mygome_add_address_beijing_default">北京</string>
+    <!--我的国美-收藏改版 2015-11 start-->
+    <string name="my_gome_favorite_edit">编辑</string>
+    <string name="my_gome_fav_product">商品收藏</string>
+    <string name="my_gome_fav_shop">店铺收藏</string>
+    <string name="my_gome_fav_title_finish">完成</string>
+    <string name="my_gome_fav_title_middle">我的收藏</string>
+    <string name="my_gome_fav_no_fav_product">您还没有收藏商品</string>
+    <string name="my_gome_fav_recommend">为您推荐</string>
+    <string name="my_gome_fav_find">看相似</string>
+    <string name="my_gome_fav_similar">相似商品</string>
+    <string name="my_gome_fav_similar_shop">相似商品</string>
+    <!--我的国美-收藏改版 2015-11 end-->
+    <!--我的国美-标签 start-->
+    <!--我的国美-标签 end-->
+
+    <string name="bought_num_tx">人\n已参团</string>
+
+    <string name="pull_more_tx">左滑更多</string>
+    <!--相册begin-->
+    <string name="mygome_album_select_error">选择无效</string>
+    <string name="mygome_album_pick_photo_title">相机</string>
+    <string name="mygome_album_pick_photo_cancel">取消</string>
+    <string name="mygome_album_image_grid_cancel">取消</string>
+    <string name="mygome_album_image_grid_select_count">0/5</string>
+    <string name="mygome_delete_pic_check">确认要删除图片?</string>
+    <string name="album_need_choose_images">请选择图片～</string>
+    <string name="album_unavailable_image_file">该文件已损坏</string>
+    <!--相册end-->
+    <string name="mygome_goods_appraise_max_count">500</string>
+    <string name="guess_you_like">你可能喜欢</string>
+
+    <!--会员改版-->`
+    <string name="my_gome_account_write_detail">完善可得100成长值</string>
+
+    <!--美通卡的信息-->
+    <string name="meitong_card_getpassword">获取卡号/卡密</string>
+    <string name="meitong_card_phone_value">手机号码:</string>
+    <string name="meitong_card_phone_title">获取手机验证码</string>
+    <string name="meitong_card_phone_varification">获取验证码</string>
+    <string name="meitong_card_phone_next_step">下一步</string>
+    <string name="meitong_card_phone_bindings">一键绑定</string>
+    <string name="meitong_card_phone_face_value">面值：</string>
+    <string name="meitong_card_phone_number">卡号：</string>
+    <string name="meitong_card_phone_status">状态：</string>
+    <string name="meitong_card_phone_password">密码：</string>
+    <string name="meitong_card_phone_validate">有效期：</string>
+    <string name="meitong_card_hint_input_password">请输入16位卡密码</string>
+    <string name="meitong_card_blance">查看余额</string>
+    <string name="meitong_card_binding">绑定</string>
+    <string name="meitong_card_input_varification">请输入验证码</string>
+
+    <string name="mygome_meitong_card_title">美通卡</string>
+    <string name="mygome_meitong_card_bindings">绑定美通卡</string>
+    <string name="mygome_meitong_card_help">使用帮助</string>
+    <string name="mygome_meitong_card_none">暂无可使用美通卡</string>
+    <string name="mygome_meitong_card_empty_tipone">美通卡是国美发行的礼品卡，购买自营商品时可直接用来抵现金。</string>
+    <string name="mygome_meitong_card_empty_tiptwo">如何购买美通卡？</string>
+    <string name="mygome_meitong_card_empty_tipthree">1. 搜索“美通卡”关键字即可查找购买；</string>
+    <string name="mygome_meitong_card_empty_tipfour">2. 点击“分类”，通过食品酒水-礼卡礼券-美通卡，即可查找到美通卡商品列表，并进行购买；</string>
+
+    <!--门店积分-->
+    <string name="mygome_index_item2_shopping">美豆</string>
+    <string name="mygome_meidou_rulers">美豆使用规则</string>
+    <!-- 新版列表-->
+    <!--订单提示-->
+    <string name="mygome_order_tips">谨防网络及客服诈骗！国美不会以订单异常、系统维护等情况为由，要求您进行退款操作!</string>
+    <!--退款售后改版-->
+
+    <string name="my_gome_no_apprise">您还没有商品评价</string>
+    <string name="my_gome_return_apply">申请售后</string>
+    <string name="mygome_refund_detail">退款明细：</string>
+    <string name="mygome_return_cancel_return">是否取消此退换货单？</string>
+    <string name="mygome_return_apply_null_desc">您还没有相关订单</string>
+    <string name="mygome_return_record_null_desc">您还没有售后记录</string>
+    <string name="mygome_return_refund_null_desc">您还没有退款记录</string>
+    <string name="my_fav_edit_title">商品编辑</string>
+    <string name="pd_list_support_suit">优惠套装</string>
+
+    <!--极信通 start-->
+
+    <string name="jxt_warning">根据国家工信部《电话用户真实身份信息登记规定》（工业和信息化部令第25号）文件要求，用户通过网络办理新号码须上传身份证照片进行实名认证，收货时须再出示本人身份证原件进行拍照留存并收取身份证复印件，所有资料国美严格保密并将交由运营商统一保存。</string>
+    <string name="jxt_uploadpicture_tip">国美对客户资料严格保密，身份证照片将交付极信通运营商妥善保存。文件尺寸最大不超过2M，照片支持jpg/jpeg/bmp/png格式。</string>
+    <string name="jxt_buyexplain">1、按照通信产品实名制购买的相关法律法规要求，保证用户合法权益，请用户下单时准确填写本人姓名、身份证号并上传清晰的身份证原件正反、面和手持照片。国美会登录公安系统及运营商系统进行身份验证，审核通过后即可出库；审核不通过的（包括但不限以下原因：身份信息不准确、不存在、照片不清晰、运营商欠费、名下业务超限等），订单会被取消；\n2、配送时需办理手机号用户本人签收（不允许任何形式的他人代收），并提供本人身份证原件接受国美配送员审验后，由国美配送员拍照留存后交运营商存档。国美对客户资料严格保密，身份证原件照片及复印件将交付运营商妥善保存。\n3、因用户本身是运营商黑名单用户或老客户资料不完善导致无法开户的，请您自行前往运营商营业厅解除黑名单限制或完善客户资料后并告知国美客服后进行受理出库；\n4、如遇国美不可抗原因（运营商调整资费政策、所选手机号码不可用等）国美会主动告知用户相关情况，用户需确认是否按新资费或换号处理，也可取消原订单，重新下单。</string>
+    <string name="jxt_title_name">身份认证信息</string>
+    <!--极信通 end-->
+    <string name="apprise_commit_success">评价已提交，将在审核通过后展示</string>
+
+
+    <!--发布评论begin-->
+    <string name="mygome_apprarise_shop_desc">服务评价</string>
+
+    <string name="mygome_appraise_list_back_show">您确定要放弃评价吗?</string>
+    <string name="mygome_appraise_update_back_show">您确定要放弃修改吗?</string>
+    <string name="mygome_appraise_append_back_show">您确定要放弃追加评价吗?</string>
+
+    <string name="apprise_list_edit_hint">分享您的购买心得,有机会获得美豆哦~</string>
+
+    <string name="apprise_append_edit_null_hint">请添加追加评价内容~</string>
+    <string name="apprise_append_edit_hint">再说点什么吧，有机会获得美豆哦~~</string>
+
+    <string name="apprise_update_edit_null_hint">请填写新的评价内容~</string>
+    <string name="apprise_update_edit_hint">输入新的评价吧，保存成功之后将会替换之前的评价~</string>
+    <string name="show_order_title">晒单</string>
+    <!--我的足迹-->
+    <string name="mygome_foot_print_delete">删除</string>
+    <string name="mygome_foot_print_yes">确认</string>
+    <string name="mygome_foot_print_not">取消</string>
+    <!--我的资产-->
+    <!--礼物购-->
+    <string name="gift_direct_tip">礼轻情意重，此处胜有声</string>
+    <string name="gift_mystery_tip">不告诉Ta礼物是什么，给Ta个惊喜~</string>
+    <string name="gift_command_tip">答对口令，领取礼物</string>
+    <string name="gift_tip">7天内未领取，将自动退款至支付账号</string>
+    <string name="gift_direct_txt">直接送</string>
+    <string name="gift_mystery_txt">神秘送</string>
+    <string name="gift_command_txt">口令送</string>
+    <string name="gift_pay">付款送礼</string>
+    <!--礼物购结束-->
+    <!--升级一账通的账号-->
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="home_fanli_tx">我要赚外快</string>
+    <!--国美币-->
+    <string name="home_default_certification_tx">实名认证</string>
+    <string name="currency_gome_money_tip">用于国美币、优惠券、美券、美豆等虚拟账户的充值、支付和提现，保障资金财产安全。</string>
+    <string name="currency_gome_forget_pwd">忘记密码?</string>
+    <!--我的国美改版-->
+    <string name="my_gome_personalize_signature_title">个性签名</string>
+
+    <string name="my_gome_personalize_signature_tip">我的签名我做主~</string>
+    <string name="my_gome_personalize_person_title">个人信息</string>
+    <string name="setting_privacy_us">隐私设置</string>
+    <string name="setting_address_us">收货地址</string>
+    <string name="setting_privacy_add_friend">添加好友设置</string>
+    <string name="setting_privacy_add_friend_title">通过手机号找到我</string>
+    <string name="setting_privacy_add_friend_big_title">隐私</string>
+    <string name="MyWallet_title_service">理财服务</string>
+    <string name="MyWallet_more_service">更多服务</string>
+    <string name="setting_privacy_cricle_friend">朋友圈设置</string>
+    <string name="setting_privacy_cricle_friend_not_mine">不让TA看我的朋友圈</string>
+    <string name="setting_privacy_cricle_friend_not">不看TA的朋友圈</string>
+    <string name="setting_privacy_add_friend_verify">加为好友时需要验证</string>
+    <!--钱包-->
+    <string name="mywallet_change_card_bag_title">我的卡券包</string>
+    <string name="appointment_apprise_edit_hint">对导购服务满意吗？给TA评价吧！</string>
+
+    <!--预约-->
+    <string name="store_guide_empty_desc">当前门店暂无其他导购，去看看其他门店导购吧</string>
+    <string name="store_appointment_cancel_content">确定要取消预约吗</string>
+    <string name="store_appointment_apprise_content">确定要取消评价吗</string>
+    <string name="store_dialog_left">取消</string>
+    <string name="store_dialog_right">确定</string>
+    <string name="store_appointment_tips">提示</string>
+    <!--add by yangbo module未拆 GProductDetail -->
+    <string name="product_shop_guide_list_advice">咨询</string>
+    <string name="product_shop_guide_list_server">预约</string>
+    <string name="group_detail">/groupon_detail.html</string>
+    <!--线上线下会员融合-->
+    <string name="online_member_card_btn_title">开通会员卡</string>
+    <string name="online_member_card_title">我的会员卡</string>
+    <string name="online_member_card_save">开通会员卡</string>
+    <string name="online_member_card_reset_pwd">重置密码</string>
+    <string name="online_member_binding_card">下一步</string>
+    <string name="online_member_binding_btn">确认绑定</string>
+
+    <string name="beauty_cancel_distribute">已上架</string>
+
+    <!--隐私设置-->
+    <string name="not_look_my_friend">不让TA看我的朋友圈</string>
+    <string name="not_look_friend">不看TA的朋友圈</string>
+    <string name="not_look_perfect">完成</string>
+
+    <!--  我的兴趣  -->
+    <string name="mine_what_interest">选择您的兴趣内容</string>
+    <string name="mine_interest_tip">我们会根据你的兴趣推荐最优内容</string>
+    <string name="interest_mine">我的兴趣</string>
+    <string name="interest_ok_save">选好了保存</string>
+    <string name="interest_save_tip">最多可选择5个您的兴趣</string>
+
+    <!--  意见反馈  -->
+    <string name="mine_publish_feedbacks" translatable="false">反馈</string>
+    <string name="mine_goto_publish_feedbacks" translatable="false">意见反馈</string>
+    <string name="mine_feedback_submit_time" translatable="false">反馈时间:</string>
+    <string name="mine_feedback_deal_time" translatable="false">处理时间:</string>
+    <string name="mine_feedback_leave_message_type" translatable="false">留言类型:</string>
+    <string name="mine_feedback_leave_message_content" translatable="false">留言内容:</string>
+    <string name="mine_feedback_phone_type" translatable="false">手机型号:</string>
+    <string name="mine_feedback_cellphone_type" translatable="false">手机型号</string>
+    <string name="mine_feedback_select_message_type" translatable="false">选择类型</string>
+    <string name="mine_feedback_et_hint" translatable="false">字符限制在5--200之间，请重新输入！</string>
+    <string name="mine_haveno_feedbacks">您还没有意见反馈,快发表吧~</string>
+    <!--  我的二维码  -->
+    <string name="mine_title_qr_code">我的二维码</string>
+    <string name="mine_qr_code_scan_add_friend_change">扫一扫，成为我的国美好友，一起享实惠 </string>
+    <string name="my_gome_save_qr">保存二维码</string>
+    <string name="my_gome_spare_qr">分享给好友</string>
+
+    <!--  商家入驻  -->
+    <string name="login_no_network" translatable="false">网络异常，请检查网络</string>
+    <string name="mine_merchants_invitation_no_record" translatable="false">无商家邀请记录</string>
+    <string name="mine_merchants_invitation_submit_time" translatable="false">审核时间：</string>
+    <string name="mine_merchants_invitation_enter_time" translatable="false">入驻时间：</string>
+    <string name="real_name_tips">为了您的账户安全，绑定美通卡前，请进行实名认证！</string>
+    <string name="set_password_tips">为了您的账户安全，绑定美通卡前，请进行密码设置！</string>
+    <string name="movie_tip">提示</string>
+</resources>
+
+

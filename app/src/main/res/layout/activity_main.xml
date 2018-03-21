@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="spi.java.com.widget_dialog_demo.MainActivity">
+
+    <TextView
+        android:id="@+id/GCommonDialog_old_Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GCommonDialog_old_Test"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        />
+
+    <TextView
+
+        android:id="@+id/OrderfillDeclareDialog_old_Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OrderfillDeclareDialog_old_Test"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/GCommonDialog_old_Test"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        />
+
+    <TextView
+
+        android:id="@+id/GCommonDialog_new_Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GCommonDialog_new_Test"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/OrderfillDeclareDialog_old_Test"
+        android:onClick="onClick"
+        />
+
+    <TextView
+
+        android:id="@+id/OrderfillDeclareDialog_new_Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OrderfillDeclareDialog_new_Test"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/GCommonDialog_new_Test"
+        android:onClick="onClick"
+        />
+</RelativeLayout>
