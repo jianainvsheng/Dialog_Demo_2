@@ -22,7 +22,7 @@ public class GNormalDialog extends BaseDialog<NormalBuilder,GNormalDialog> {
         super(context);
     }
 
-    public GNormalDialog(@NonNull Context context, int themeResId) {
+    public GNormalDialog(@NonNull Context context, @StyleRes int themeResId) {
         super(context, themeResId);
     }
 
