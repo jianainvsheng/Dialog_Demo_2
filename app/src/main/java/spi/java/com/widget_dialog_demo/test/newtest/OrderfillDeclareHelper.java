@@ -6,6 +6,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.view.WindowManager;
@@ -46,6 +47,12 @@ public class OrderfillDeclareHelper extends BaseDialogHelper<NormalBuilder,GNorm
         mMessage.setMovementMethod(ScrollingMovementMethod.getInstance());
         mMessage.setText(builder.getContent());
         mPositiveButton.setText(builder.getPositiveName());
+        mPositiveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getDialog().dismiss();
+            }
+        });
         final View tempView = getContextView();
         ViewTreeObserver
                 vto = tempView.getViewTreeObserver();
@@ -54,29 +61,33 @@ public class OrderfillDeclareHelper extends BaseDialogHelper<NormalBuilder,GNorm
             public void onGlobalLayout() {
                 tempView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 int height = tempView.getMeasuredHeight();
-                setDialogMaxHeight(height,dialog);
+                setDialogMaxHeight(height, mMessage);
             }
         });
-        mPositiveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getDialog().dismiss();
-            }
-        });
-        Window window = dialog.getWindow();
+
+        Window window = getDialog().getWindow();
         if (null != window) {
             window.setGravity(Gravity.CENTER);
         }
+
+        Window dialogWindow = getDialog().getWindow();
+        WindowManager.LayoutParams params = dialogWindow.getAttributes();
+        params.width = (int) (ScreenUtils.getDisplayWidth(getContext()) * 0.85);
+        params.height= ViewGroup.LayoutParams.WRAP_CONTENT;
+        dialogWindow.setAttributes(params);
     }
 
-    private void setDialogMaxHeight(int expectHeight, Dialog dialog) {
-        double maxHeight = ScreenUtils.getDisplayHeight(getContext()) * 0.6;
+    private void setDialogMaxHeight(int expectHeight, TextView textView) {
+        int maxHeight = (int) (ScreenUtils.getDisplayHeight(getContext()) * 0.6);
         int setHeight = maxHeight > expectHeight ? expectHeight : (int) maxHeight;
-        if (null != dialog.getWindow()) {
-            WindowManager.LayoutParams lp = dialog.getWindow().getAttributes();
+        if (null != getDialog().getWindow()) {
+            WindowManager.LayoutParams lp = getDialog().getWindow().getAttributes();
             lp.width = (int) (ScreenUtils.getDisplayWidth(getContext()) * 0.85);
             lp.height = setHeight;
-            dialog.getWindow().setAttributes(lp);
+            getDialog().getWindow().setAttributes(lp);
+        }
+        if (setHeight == maxHeight && null != textView){
+            textView.setMovementMethod(ScrollingMovementMethod.getInstance());
         }
     }
 }
