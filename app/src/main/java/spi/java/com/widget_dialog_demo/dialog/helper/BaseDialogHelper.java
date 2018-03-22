@@ -3,9 +3,6 @@ package spi.java.com.widget_dialog_demo.dialog.helper;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.View;
-
-import spi.java.com.widget_dialog_demo.dialog.IDialog;
-import spi.java.com.widget_dialog_demo.dialog.base.BaseDialog;
 import spi.java.com.widget_dialog_demo.dialog.builder.IDialogBuilder;
 
 /**

@@ -12,10 +12,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
-
 import spi.java.com.widget_dialog_demo.R;
 import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
-import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 import spi.java.com.widget_dialog_demo.test.ScreenUtils;
 

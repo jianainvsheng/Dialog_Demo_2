@@ -3,12 +3,9 @@ package spi.java.com.widget_dialog_demo.dialog.commom;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.StyleRes;
-import android.util.Log;
 import android.view.View;
-
 import spi.java.com.widget_dialog_demo.dialog.base.BaseDialog;
 import spi.java.com.widget_dialog_demo.dialog.builder.BaseBuilder;
-import spi.java.com.widget_dialog_demo.dialog.builder.IDialogBuilder;
 import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 import spi.java.com.widget_dialog_demo.dialog.helper.usually.UsuallyDialogHelper;

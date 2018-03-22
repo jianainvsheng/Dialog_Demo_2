@@ -1,9 +1,6 @@
 package spi.java.com.widget_dialog_demo.dialog;
 
 import android.content.Context;
-import android.view.View;
-
-import spi.java.com.widget_dialog_demo.dialog.base.BaseDialog;
 import spi.java.com.widget_dialog_demo.dialog.builder.IDialogBuilder;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 

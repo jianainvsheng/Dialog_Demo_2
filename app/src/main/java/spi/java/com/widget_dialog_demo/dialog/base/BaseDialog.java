@@ -2,11 +2,9 @@ package spi.java.com.widget_dialog_demo.dialog.base;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.StyleRes;
 import android.util.Log;
-
 import spi.java.com.widget_dialog_demo.dialog.IDialog;
 import spi.java.com.widget_dialog_demo.dialog.builder.IDialogBuilder;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;

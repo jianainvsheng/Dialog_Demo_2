@@ -1,10 +1,7 @@
 package spi.java.com.widget_dialog_demo.test.newtest.testbuilder;
 
 import android.content.Context;
-
 import spi.java.com.widget_dialog_demo.dialog.builder.BaseBuilder;
-import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
-import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 
 /**
