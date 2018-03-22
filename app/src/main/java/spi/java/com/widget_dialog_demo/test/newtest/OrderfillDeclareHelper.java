@@ -23,7 +23,7 @@ import spi.java.com.widget_dialog_demo.test.ScreenUtils;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public class OrderfillDeclareHelper extends BaseDialogHelper<NormalBuilder,GNormalDialog>{
+public class OrderfillDeclareHelper extends BaseDialogHelper<NormalBuilder>{
 
     private TextView mMessage;
     private Button mPositiveButton;
@@ -42,7 +42,7 @@ public class OrderfillDeclareHelper extends BaseDialogHelper<NormalBuilder,GNorm
     }
 
     @Override
-    public void setBuilder(NormalBuilder builder, final GNormalDialog dialog) {
+    public void setBuilder(NormalBuilder builder, final Dialog dialog) {
         super.setBuilder(builder, dialog);
         mMessage.setMovementMethod(ScrollingMovementMethod.getInstance());
         mMessage.setText(builder.getContent());

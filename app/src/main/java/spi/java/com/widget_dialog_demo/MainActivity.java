@@ -1,5 +1,6 @@
 package spi.java.com.widget_dialog_demo;
 
+import android.app.Dialog;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();
         } else if(view.getId() == R.id.GCommonDialog_new_Test){
 
-            GNormalDialog dialog = GNormalDialog.onCreateBuiler(this)
+            Dialog dialog = GNormalDialog.onCreateBuiler(this)
                     .setContent("你好我是新版本GCommonDialog")
                     .setThemeStyleResId(R.style.dialog_style)
                     .setNegativeName("cancle")
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();
         }else if(view.getId() == R.id.OrderfillDeclareDialog_new_Test){
 
-            GNormalDialog dialog = GNormalDialog.onCreateBuiler(this)
+            Dialog dialog = GNormalDialog.onCreateBuiler(this)
                     .setContent("大家好我是新版本OrderfillDeclareDialog")
                     .setPositiveName("ok")
                     .setThemeStyleResId(R.style.dialog_style)
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             //支持传递外部builder 但是必须是继承dialog本身的builder 在helper中需要转型一下
             TestNormalBuilder builder = new TestNormalBuilder(this);
             builder.setTest("你好");
-            GNormalDialog dialog = GNormalDialog.onCreateBuiler(builder)
+            Dialog dialog = GNormalDialog.onCreateBuiler(builder)
                     .setThemeStyleResId(R.style.dialog_style)
                     .setHelperClass(TestHelper.class)
                     .build();

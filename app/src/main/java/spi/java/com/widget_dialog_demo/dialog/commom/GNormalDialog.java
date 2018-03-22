@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 import spi.java.com.widget_dialog_demo.dialog.base.BaseDialog;
+import spi.java.com.widget_dialog_demo.dialog.builder.BaseBuilder;
 import spi.java.com.widget_dialog_demo.dialog.builder.IDialogBuilder;
 import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
@@ -16,7 +17,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.usually.UsuallyDialogHelper
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public class GNormalDialog extends BaseDialog<NormalBuilder,GNormalDialog> {
+public class GNormalDialog< N extends BaseBuilder<N>> extends BaseDialog<N> {
 
     public GNormalDialog(@NonNull Context context) {
         super(context);
@@ -26,20 +27,21 @@ public class GNormalDialog extends BaseDialog<NormalBuilder,GNormalDialog> {
         super(context, themeResId);
     }
 
+    @Override
+    public BaseDialogHelper onCreateDefaultHelp(Context context, N data) {
+        return new UsuallyDialogHelper(context);
+    }
+
     public static NormalBuilder onCreateBuiler(Context context){
 
         return new NormalBuilder(context);
     }
 
-    public static < N extends NormalBuilder> N onCreateBuiler(N n){
+    public static < N extends BaseBuilder<N>> N onCreateBuiler(N n){
 
         return n;
     }
 
-    @Override
-    public BaseDialogHelper<NormalBuilder,GNormalDialog> onCreateDefaultHelp(Context context, NormalBuilder data) {
-        return new UsuallyDialogHelper(context);
-    }
 
     public interface PositiveCallBack {
         void onClick(View v);

@@ -2,6 +2,7 @@ package spi.java.com.widget_dialog_demo.test.newtest.testbuilder;
 
 import android.content.Context;
 
+import spi.java.com.widget_dialog_demo.dialog.builder.BaseBuilder;
 import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
 import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
@@ -10,7 +11,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian on 2018/3/22.
  */
 
-public class TestNormalBuilder extends NormalBuilder {
+public class TestNormalBuilder extends BaseBuilder<TestNormalBuilder> {
 
     public String test;
 
@@ -19,7 +20,7 @@ public class TestNormalBuilder extends NormalBuilder {
     }
 
     @Override
-    public NormalBuilder setHelperClass(Class<? extends BaseDialogHelper<NormalBuilder, GNormalDialog>> cls) {
+    public TestNormalBuilder setHelperClass(Class<? extends BaseDialogHelper<TestNormalBuilder>> cls) {
         return super.setHelperClass(cls);
     }
 

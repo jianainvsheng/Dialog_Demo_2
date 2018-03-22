@@ -1,4 +1,5 @@
 package spi.java.com.widget_dialog_demo.dialog.builder;
+import android.app.Dialog;
 import android.support.annotation.StyleRes;
 
 import spi.java.com.widget_dialog_demo.dialog.IDialog;
@@ -9,7 +10,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public interface IDialogBuilder<D extends IDialogBuilder<D,G>,G extends IDialog<D,G>> {
+public interface IDialogBuilder<D extends IDialogBuilder<D>> {
 
     /**
      * the theme in the dialog
@@ -27,7 +28,7 @@ public interface IDialogBuilder<D extends IDialogBuilder<D,G>,G extends IDialog<
      * return the need helper
      * @return
      */
-    public Class<? extends BaseDialogHelper<D,G>> getHelperClass();
+    public Class<? extends BaseDialogHelper<D>> getHelperClass();
 
 
     /**
@@ -35,12 +36,12 @@ public interface IDialogBuilder<D extends IDialogBuilder<D,G>,G extends IDialog<
      * @param cls
      * @return
      */
-    public D setHelperClass(Class<? extends BaseDialogHelper<D,G>> cls);
+    public D setHelperClass(Class<? extends BaseDialogHelper<D>> cls);
 
     /**
      * create dialog
      * @return
      */
-    public G build();
+    public Dialog build();
 
 }

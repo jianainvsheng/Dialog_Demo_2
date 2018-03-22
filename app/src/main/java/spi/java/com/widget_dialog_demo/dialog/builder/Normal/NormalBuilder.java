@@ -9,7 +9,7 @@ import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
  * Created by yangjian on 2018/3/21.
  */
 
-public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
+public class NormalBuilder extends BaseBuilder<NormalBuilder> {
 
     private String title;            // 标题文字
     private String content;          // 正文文字
@@ -170,11 +170,6 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
     public NormalBuilder setNegativeCallBack(GNormalDialog.NegativeCallBack negativeCallBack) {
         this.negativeCallBack = negativeCallBack;
         return this;
-    }
-
-    @Override
-    public Class<GNormalDialog> getBuildClass() {
-        return GNormalDialog.class;
     }
 }
 

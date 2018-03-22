@@ -1,20 +1,22 @@
 package spi.java.com.widget_dialog_demo.dialog.builder;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.support.annotation.StyleRes;
 import android.util.Log;
 
 import spi.java.com.widget_dialog_demo.dialog.base.BaseDialog;
+import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 
 /**
  * Created by yangjian on 2018/3/22.
  */
 
-public abstract class BaseBuilder<D extends BaseBuilder<D,G>,G extends BaseDialog<D,G>> implements IDialogBuilder<D,G>{
+public abstract class BaseBuilder<D extends BaseBuilder<D>> implements IDialogBuilder<D>{
 
 
-    private Class<? extends BaseDialogHelper<D,G>> mHelperClass;
+    private Class<? extends BaseDialogHelper<D>> mHelperClass;
 
     private @StyleRes int mThemeStyleId;
 
@@ -39,52 +41,27 @@ public abstract class BaseBuilder<D extends BaseBuilder<D,G>,G extends BaseDialo
     }
 
     @Override
-    public Class<? extends BaseDialogHelper<D,G>> getHelperClass() {
+    public Class<? extends BaseDialogHelper<D>> getHelperClass() {
         return  mHelperClass;
     }
 
     @Override
-    public D setHelperClass(Class<? extends BaseDialogHelper<D,G>> cls) {
+    public D setHelperClass(Class<? extends BaseDialogHelper<D>> cls) {
         this.mHelperClass = cls;
         return (D) this;
     }
 
     @Override
-    public G build() {
-        Class<G> cls = getBuildClass();
-        if(cls == null)
-            throw new NullPointerException("create build fail");
-        Class[] parameterTypes = null;
-        Object[] parameters= null;
+    public Dialog build() {
+        GNormalDialog<D> dialog;
         if(getThemeStyleResId() <= 0){
-            Class[] types= {Context.class};
-            parameterTypes = types;
-            Object[] par={mContext};
-            parameters = par;
+            dialog =  new GNormalDialog(getContext());
         }else{
-            Class[] types= {Context.class,int.class};
-            parameterTypes = types;
-            Object[] par={mContext,getThemeStyleResId()};
-            parameters = par;
+            dialog =  new GNormalDialog(getContext(),getThemeStyleResId());
         }
-        //根据参数类型获取相应的构造函数
-        try {
-            java.lang.reflect.Constructor<G> constructor = cls.getConstructor(parameterTypes);
-            G g = constructor.newInstance(parameters);
-            g.setBuilder((D)this);
-            return g;
-        } catch (Exception e) {
-            e.printStackTrace();
-            Log.d("BaseDialog","the helper in the diaolg is wrong");
-        }
-        return null;
+        dialog.setBuilder((D)this);
+        return dialog;
     }
-
-    /**
-     * return the dialog class
-     * @return
-     */
-    public abstract Class<G> getBuildClass();
 
     public Context getContext(){
 

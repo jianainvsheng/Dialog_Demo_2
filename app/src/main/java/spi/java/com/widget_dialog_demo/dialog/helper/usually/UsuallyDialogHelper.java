@@ -19,7 +19,7 @@ import spi.java.com.widget_dialog_demo.test.ScreenUtils;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public class UsuallyDialogHelper extends BaseDialogHelper<NormalBuilder,GNormalDialog> implements View.OnClickListener{
+public class UsuallyDialogHelper extends BaseDialogHelper<NormalBuilder> implements View.OnClickListener{
 
     private LinearLayout mContainerLayout;
     private TextView mTitleTv;
@@ -47,9 +47,8 @@ public class UsuallyDialogHelper extends BaseDialogHelper<NormalBuilder,GNormalD
     }
 
     @Override
-    public void setBuilder(NormalBuilder builder, GNormalDialog dialog) {
+    public void setBuilder(NormalBuilder builder, Dialog dialog) {
         super.setBuilder(builder, dialog);
-        // 普通视图，有标题栏或内容
         if (TextUtils.isEmpty(builder.getTitle())) {
             mTitleTv.setVisibility(View.GONE);
         } else {

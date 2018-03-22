@@ -1,5 +1,6 @@
 package spi.java.com.widget_dialog_demo.test.newtest.testhelper;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +17,7 @@ import spi.java.com.widget_dialog_demo.test.newtest.testbuilder.TestNormalBuilde
  * Created by yangjian on 2018/3/22.
  */
 
-public class TestHelper extends BaseDialogHelper<NormalBuilder,GNormalDialog> {
+public class TestHelper extends BaseDialogHelper<TestNormalBuilder> {
 
     private TextView mTestView;
 
@@ -33,17 +34,14 @@ public class TestHelper extends BaseDialogHelper<NormalBuilder,GNormalDialog> {
     }
 
     @Override
-    public void setBuilder(NormalBuilder builder, GNormalDialog dialog) {
+    public void setBuilder(TestNormalBuilder builder, Dialog dialog) {
         super.setBuilder(builder, dialog);
-        if(builder instanceof TestNormalBuilder){
-
-            mTestView.setText(((TestNormalBuilder)builder).test);
-            mTestView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    getDialog().dismiss();
-                }
-            });
-        }
+        mTestView.setText(builder.test);
+        mTestView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getDialog().dismiss();
+            }
+        });
     }
 }

@@ -11,7 +11,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public interface IDialog<D extends IDialogBuilder<D,G>,G extends IDialog<D,G>> {
+public interface IDialog<D extends IDialogBuilder<D>> {
 
     /**
      * init the dialog
@@ -23,6 +23,6 @@ public interface IDialog<D extends IDialogBuilder<D,G>,G extends IDialog<D,G>> {
      * create the helper
      * @return
      */
-    public BaseDialogHelper<D,G> onCreateHelper(Context context,D data) throws NoSuchMethodException;
+    public BaseDialogHelper<D> onCreateHelper(Context context,D data) throws NoSuchMethodException;
 
 }
