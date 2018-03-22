@@ -11,7 +11,6 @@ import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 
 public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
 
-    private Context context;
     private String title;            // 标题文字
     private String content;          // 正文文字
     private String positiveName;     // 确认按钮文字
@@ -25,20 +24,15 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
 
     private View customView;         // 自定义视图
 
-    private GNormalDialog mDialog;
-
     private GNormalDialog.PositiveCallBack positiveCallBack;
     private GNormalDialog.NegativeCallBack negativeCallBack;
 
 
     private boolean autoDismiss = true;
 
-    public Context getContext() {
-        return context;
-    }
-
     public NormalBuilder(Context context) {
-        this.context = context;
+
+        super(context);
     }
 
     public String getTitle() {
@@ -51,7 +45,7 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
     }
 
     public NormalBuilder setTitle(int titleRes) {
-        this.title = context.getResources().getString(titleRes);
+        this.title = getContext().getResources().getString(titleRes);
         return this;
     }
 
@@ -65,7 +59,7 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
     }
 
     public NormalBuilder setContent(int contentRes) {
-        this.content = context.getResources().getString(contentRes);
+        this.content = getContext().getResources().getString(contentRes);
         return this;
     }
 
@@ -79,7 +73,7 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
     }
 
     public NormalBuilder setPositiveName(int positiveNameRes) {
-        this.positiveName = context.getResources().getString(positiveNameRes);
+        this.positiveName = getContext().getResources().getString(positiveNameRes);
         return this;
     }
 
@@ -93,7 +87,7 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
     }
 
     public NormalBuilder setNegativeName(int negativeNameRes) {
-        this.negativeName = context.getResources().getString(negativeNameRes);
+        this.negativeName = getContext().getResources().getString(negativeNameRes);
         return this;
     }
 
@@ -179,49 +173,8 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
     }
 
     @Override
-    public GNormalDialog build() {
-
-        if(getThemeStyleResId() <= 0){
-            mDialog = new GNormalDialog(context, this);
-            return mDialog;
-        }else{
-            mDialog = new GNormalDialog(context,getThemeStyleResId(),this);
-            return mDialog;
-        }
+    public Class<GNormalDialog> getBuildClass() {
+        return GNormalDialog.class;
     }
-
-//    @Override
-//    public int getThemeStyleResId() {
-//
-//        return mThemeStyleId;
-//    }
-//
-//    @Override
-//    public NormalBuilder setThemeStyleResId(int themeStyleResId) {
-//        this.mThemeStyleId = themeStyleResId;
-//        return this;
-//    }
-//
-//    @Override
-//    public Class<? extends BaseDialogHelper<NormalBuilder>> getHelperClass() {
-//        return  mHelperClass;
-//    }
-//
-//    @Override
-//    public NormalBuilder setHelperClass(Class<? extends BaseDialogHelper<NormalBuilder>> cls) {
-//
-//        this.mHelperClass = cls;
-//        return this;
-//    }
-
-//    public GNormalDialog build() {
-//        if(getThemeStyleResId() <= 0){
-//            mDialog = new GNormalDialog(context, this);
-//            return mDialog;
-//        }else{
-//            mDialog = new GNormalDialog(context,getThemeStyleResId(),this);
-//            return mDialog;
-//        }
-//    }
 }
 

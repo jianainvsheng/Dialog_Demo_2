@@ -18,12 +18,12 @@ import spi.java.com.widget_dialog_demo.dialog.helper.usually.UsuallyDialogHelper
 
 public class GNormalDialog extends BaseDialog<NormalBuilder,GNormalDialog> {
 
-    public GNormalDialog(@NonNull Context context, NormalBuilder data) {
-        super(context, data);
+    public GNormalDialog(@NonNull Context context) {
+        super(context);
     }
 
-    public GNormalDialog(@NonNull Context context, int themeResId, NormalBuilder data) {
-        super(context, themeResId, data);
+    public GNormalDialog(@NonNull Context context, int themeResId) {
+        super(context, themeResId);
     }
 
     public static NormalBuilder onCreateBuiler(Context context){

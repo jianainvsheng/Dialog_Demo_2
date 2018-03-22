@@ -17,16 +17,23 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 
 public abstract class BaseDialog <D extends IDialogBuilder<D,G>,G extends BaseDialog<D,G>> extends Dialog implements IDialog<D,G>{
 
-    public BaseDialog(@NonNull Context context,D data) {
+    private Context mContext;
+
+    public BaseDialog(@NonNull Context context) {
         super(context);
-        initDialog(context,data);
+        this.mContext = context;
     }
 
-    public BaseDialog(@NonNull Context context, @StyleRes int themeResId,D data) {
+    public BaseDialog(@NonNull Context context, @StyleRes int themeResId) {
+
         super(context, themeResId);
-        initDialog(context,data);
+        this.mContext = context;
     }
 
+    public void setBuilder(D data){
+
+        initDialog(mContext,data);
+    }
     @Override
     public void initDialog(Context context, D data) {
         BaseDialogHelper<D,G> mHelper = onCreateHelper(context,data);
