@@ -1,18 +1,15 @@
 package spi.java.com.widget_dialog_demo.dialog.builder.Normal;
 
 import android.content.Context;
-import android.support.annotation.StyleRes;
 import android.view.View;
-
-import spi.java.com.widget_dialog_demo.dialog.builder.IDialogBuilder;
+import spi.java.com.widget_dialog_demo.dialog.builder.BaseBuilder;
 import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
-import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
 
 /**
  * Created by yangjian on 2018/3/21.
  */
 
-public class NormalBuilder implements IDialogBuilder<NormalBuilder> {
+public class NormalBuilder extends BaseBuilder<NormalBuilder> {
 
     private Context context;
     private String title;            // 标题文字
@@ -27,11 +24,6 @@ public class NormalBuilder implements IDialogBuilder<NormalBuilder> {
     private int negativeBtnColor;    // 取消按钮文字
 
     private View customView;         // 自定义视图
-
-    private @StyleRes
-    int mThemeStyleId;
-
-    private Class<? extends BaseDialogHelper<NormalBuilder>> mHelperClass;
 
     private GNormalDialog mDialog;
 
@@ -186,29 +178,29 @@ public class NormalBuilder implements IDialogBuilder<NormalBuilder> {
         return this;
     }
 
-    @Override
-    public int getThemeStyleResId() {
-
-        return mThemeStyleId;
-    }
-
-    @Override
-    public NormalBuilder setThemeStyleResId(int themeStyleResId) {
-        this.mThemeStyleId = themeStyleResId;
-        return this;
-    }
-
-    @Override
-    public Class<? extends BaseDialogHelper<NormalBuilder>> getHelperClass() {
-        return  mHelperClass;
-    }
-
-    @Override
-    public NormalBuilder setHelperClass(Class<? extends BaseDialogHelper<NormalBuilder>> cls) {
-
-        this.mHelperClass = cls;
-        return this;
-    }
+//    @Override
+//    public int getThemeStyleResId() {
+//
+//        return mThemeStyleId;
+//    }
+//
+//    @Override
+//    public NormalBuilder setThemeStyleResId(int themeStyleResId) {
+//        this.mThemeStyleId = themeStyleResId;
+//        return this;
+//    }
+//
+//    @Override
+//    public Class<? extends BaseDialogHelper<NormalBuilder>> getHelperClass() {
+//        return  mHelperClass;
+//    }
+//
+//    @Override
+//    public NormalBuilder setHelperClass(Class<? extends BaseDialogHelper<NormalBuilder>> cls) {
+//
+//        this.mHelperClass = cls;
+//        return this;
+//    }
 
     public GNormalDialog build() {
         if(getThemeStyleResId() <= 0){
