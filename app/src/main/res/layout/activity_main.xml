@@ -52,4 +52,18 @@
         android:layout_below="@+id/GCommonDialog_new_Test"
         android:onClick="onClick"
         />
+
+
+    <TextView
+
+        android:id="@+id/OrderfillDeclareDialog_new_Builder_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OrderfillDeclareDialog_new_Builder_test"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/OrderfillDeclareDialog_new_Test"
+        android:onClick="onClick"
+        />
+
 </RelativeLayout>

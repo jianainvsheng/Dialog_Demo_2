@@ -31,6 +31,11 @@ public class GNormalDialog extends BaseDialog<NormalBuilder,GNormalDialog> {
         return new NormalBuilder(context);
     }
 
+    public static < N extends NormalBuilder> N onCreateBuiler(N n){
+
+        return n;
+    }
+
     @Override
     public BaseDialogHelper<NormalBuilder,GNormalDialog> onCreateDefaultHelp(Context context, NormalBuilder data) {
         return new UsuallyDialogHelper(context);

@@ -5,12 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.HashMap;
+
 import spi.java.com.widget_dialog_demo.dialog.builder.Normal.NormalBuilder;
 import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
 import spi.java.com.widget_dialog_demo.dialog.helper.usually.UsuallyDialogHelper;
 import spi.java.com.widget_dialog_demo.test.GCommonDialog;
 import spi.java.com.widget_dialog_demo.test.OrderfillDeclareDialog;
 import spi.java.com.widget_dialog_demo.test.newtest.OrderfillDeclareHelper;
+import spi.java.com.widget_dialog_demo.test.newtest.testbuilder.TestNormalBuilder;
+import spi.java.com.widget_dialog_demo.test.newtest.testhelper.TestHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +54,16 @@ public class MainActivity extends AppCompatActivity {
                     .build();
             dialog.show();
 
+        }else if(view.getId() == R.id.OrderfillDeclareDialog_new_Builder_test){
+
+            //支持传递外部builder 但是必须是继承dialog本身的builder 在helper中需要转型一下
+            TestNormalBuilder builder = new TestNormalBuilder(this);
+            builder.setTest("你好");
+            GNormalDialog dialog = GNormalDialog.onCreateBuiler(builder)
+                    .setThemeStyleResId(R.style.dialog_style)
+                    .setHelperClass(TestHelper.class)
+                    .build();
+            dialog.show();
         }
     }
 }
