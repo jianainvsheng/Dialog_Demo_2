@@ -9,7 +9,7 @@ import spi.java.com.widget_dialog_demo.dialog.commom.GNormalDialog;
  * Created by yangjian on 2018/3/21.
  */
 
-public class NormalBuilder extends BaseBuilder<NormalBuilder> {
+public class NormalBuilder extends BaseBuilder<NormalBuilder,GNormalDialog> {
 
     private Context context;
     private String title;            // 标题文字
@@ -178,6 +178,18 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder> {
         return this;
     }
 
+    @Override
+    public GNormalDialog build() {
+
+        if(getThemeStyleResId() <= 0){
+            mDialog = new GNormalDialog(context, this);
+            return mDialog;
+        }else{
+            mDialog = new GNormalDialog(context,getThemeStyleResId(),this);
+            return mDialog;
+        }
+    }
+
 //    @Override
 //    public int getThemeStyleResId() {
 //
@@ -202,14 +214,14 @@ public class NormalBuilder extends BaseBuilder<NormalBuilder> {
 //        return this;
 //    }
 
-    public GNormalDialog build() {
-        if(getThemeStyleResId() <= 0){
-            mDialog = new GNormalDialog(context, this);
-            return mDialog;
-        }else{
-            mDialog = new GNormalDialog(context,getThemeStyleResId(),this);
-            return mDialog;
-        }
-    }
+//    public GNormalDialog build() {
+//        if(getThemeStyleResId() <= 0){
+//            mDialog = new GNormalDialog(context, this);
+//            return mDialog;
+//        }else{
+//            mDialog = new GNormalDialog(context,getThemeStyleResId(),this);
+//            return mDialog;
+//        }
+//    }
 }
 

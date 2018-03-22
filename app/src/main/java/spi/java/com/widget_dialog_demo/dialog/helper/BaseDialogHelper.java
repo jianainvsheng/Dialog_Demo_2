@@ -4,15 +4,19 @@ import android.app.Dialog;
 import android.content.Context;
 import android.view.View;
 
+import spi.java.com.widget_dialog_demo.dialog.IDialog;
+import spi.java.com.widget_dialog_demo.dialog.base.BaseDialog;
+import spi.java.com.widget_dialog_demo.dialog.builder.IDialogBuilder;
+
 /**
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public abstract class BaseDialogHelper<D> {
+public abstract class BaseDialogHelper<D extends IDialogBuilder<D,G>,G extends IDialog<D,G>> {
 
     private D mBuilder;
 
-    private Dialog mDialog;
+    private G mDialog;
 
     /**
      * show the context of view in the dialog
@@ -33,7 +37,7 @@ public abstract class BaseDialogHelper<D> {
      * Binding builder
      * @param builder
      */
-    public void setBuilder(D builder, Dialog dialog){
+    public void setBuilder(D builder, G dialog){
 
         this.mBuilder = builder;
         this.mDialog = dialog;
@@ -48,7 +52,7 @@ public abstract class BaseDialogHelper<D> {
         return mBuilder;
     }
 
-    public Dialog getDialog(){
+    public G getDialog(){
 
         return mDialog;
     }

@@ -16,7 +16,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.usually.UsuallyDialogHelper
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public class GNormalDialog extends BaseDialog<NormalBuilder> {
+public class GNormalDialog extends BaseDialog<NormalBuilder,GNormalDialog> {
 
     public GNormalDialog(@NonNull Context context, NormalBuilder data) {
         super(context, data);
@@ -32,7 +32,7 @@ public class GNormalDialog extends BaseDialog<NormalBuilder> {
     }
 
     @Override
-    public BaseDialogHelper<NormalBuilder> onCreateDefaultHelp(Context context, NormalBuilder data) {
+    public BaseDialogHelper<NormalBuilder,GNormalDialog> onCreateDefaultHelp(Context context, NormalBuilder data) {
         return new UsuallyDialogHelper(context);
     }
 

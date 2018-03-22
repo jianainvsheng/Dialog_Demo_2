@@ -15,7 +15,7 @@ import spi.java.com.widget_dialog_demo.dialog.helper.BaseDialogHelper;
  * Created by yangjian-ds3 on 2018/3/21.
  */
 
-public abstract class BaseDialog <D extends IDialogBuilder<D>> extends Dialog implements IDialog<D>{
+public abstract class BaseDialog <D extends IDialogBuilder<D,G>,G extends BaseDialog<D,G>> extends Dialog implements IDialog<D,G>{
 
     public BaseDialog(@NonNull Context context,D data) {
         super(context);
@@ -29,9 +29,9 @@ public abstract class BaseDialog <D extends IDialogBuilder<D>> extends Dialog im
 
     @Override
     public void initDialog(Context context, D data) {
-        BaseDialogHelper<D> mHelper = onCreateHelper(context,data);
+        BaseDialogHelper<D,G> mHelper = onCreateHelper(context,data);
         if(mHelper == null){
-            BaseDialogHelper<D> mDefaultHelper = onCreateDefaultHelp(context,data);
+            BaseDialogHelper<D,G> mDefaultHelper = onCreateDefaultHelp(context,data);
             if(mDefaultHelper == null){
                 throw new NullPointerException("onCreateHelper and onCreateDefaultHelp fail by which mHelper is null");
             }else{
@@ -39,7 +39,7 @@ public abstract class BaseDialog <D extends IDialogBuilder<D>> extends Dialog im
                     throw new NullPointerException("mDefaultHelper fail by which view is null in the helper");
                 } else{
                     setContentView(mDefaultHelper.getContextView());
-                    mDefaultHelper.setBuilder(data,this);
+                    mDefaultHelper.setBuilder(data,(G)this);
                 }
             }
         }else{
@@ -47,22 +47,22 @@ public abstract class BaseDialog <D extends IDialogBuilder<D>> extends Dialog im
                 throw new NullPointerException("ContextView fail by which view is null in the helper");
             }
             setContentView(mHelper.getContextView());
-            mHelper.setBuilder(data,this);
+            mHelper.setBuilder(data,(G)this);
         }
     }
 
     @Override
-    public BaseDialogHelper<D> onCreateHelper(Context context, D data) {
+    public BaseDialogHelper<D,G> onCreateHelper(Context context, D data) {
 
         if(data != null && data.getHelperClass() != null){
-            Class<? extends BaseDialogHelper<D>> cls = data.getHelperClass();
+            Class<? extends BaseDialogHelper<D,G>> cls = data.getHelperClass();
             //参数类型数组
             Class[] parameterTypes={Context.class};
             //根据参数类型获取相应的构造函数
             try {
-                java.lang.reflect.Constructor<? extends BaseDialogHelper<D>> constructor = cls.getConstructor(parameterTypes);
+                java.lang.reflect.Constructor<? extends BaseDialogHelper<D,G>> constructor = cls.getConstructor(parameterTypes);
                 Object[] parameters={context};
-                BaseDialogHelper<D> h = constructor.newInstance(parameters);
+                BaseDialogHelper<D,G> h = constructor.newInstance(parameters);
                 return h;
             } catch (Exception e) {
                 //e.printStackTrace();
@@ -78,6 +78,6 @@ public abstract class BaseDialog <D extends IDialogBuilder<D>> extends Dialog im
      * @param data
      * @return
      */
-    public abstract BaseDialogHelper<D> onCreateDefaultHelp(Context context, D data);
+    public abstract BaseDialogHelper<D,G> onCreateDefaultHelp(Context context, D data);
 
 }
