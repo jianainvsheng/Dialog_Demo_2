@@ -16,13 +16,9 @@ public class TestNormalBuilder extends BaseBuilder<TestNormalBuilder> {
         super(context);
     }
 
-    @Override
-    public TestNormalBuilder setHelperClass(Class<? extends BaseDialogHelper<TestNormalBuilder>> cls) {
-        return super.setHelperClass(cls);
-    }
-
-    public void setTest(String test){
+    public TestNormalBuilder setTest(String test){
 
         this.test = test;
+        return this;
     }
 }
